@@ -27,6 +27,7 @@
                     right: 0;
                     top: 38%;
                     width: 65px;
+                    z-index: 9999;
             }
             .xs-navigator ul{
                 list-style: none;
@@ -69,11 +70,28 @@
                 font-size: 30px;
             }
             .wrap-1{
-                background: #DDE9F2;    
+                background: #00CCCC;    
             }
             
             #scene-2{
                 opacity: 0;
+            }
+            
+            #scene-3{
+                opacity: 0;
+            }
+            
+            .xsbottom{
+                border:1px solid red;
+                bottom:0;
+                position:fixed;
+                width:20%;
+            }
+            #xsbottom2{
+                right: 0;
+            }
+            #xsbottom3{
+                right: 50%;
             }
         </style>
         <section>
@@ -104,15 +122,31 @@
                         </div>
                     </div>
                 </div>
-
-<!--                <div class="row">
-                    <div class="col-md-12 xs-row">
-                        <div class="wrap" id="scene-3">  
-                            <h2>Magic Happens Here</h2>
-                            <div class="animation" id="animation-3"><i class="fa fa-heart"></i></div>
+                
+                <div class="row xs-row wrap-3">
+                    <div class="col-md-12">
+                        <div class="wrap centered" id="scene-3">  
+                            <div class="col-md-8">
+                                <p class="">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>-->
+                </div>
+                
+                
+                <div class="row xs-row wrap-4">
+                    <div class="col-md-12">
+                        <div class="wrap centered" id="scene-4">  
+                            <div class="col-md-8">
+                                <p class="">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
             
@@ -125,6 +159,10 @@
                 </ul>
             </div>
             
+            <div class="xsbottom" id="xsbottom1"></div>
+            <div class="xsbottom" id="xsbottom2"></div>
+            <div class="xsbottom" id="xsbottom3"></div>
+            
         </section>
         
         <script src="js/TweenMax.min.js"></script>
@@ -134,31 +172,107 @@
         <script src="js/debug.addIndicators.min.js"></script>
         <script>
             $(function() {
-
+                
+                //First Group
                 var scrollMagicController = new ScrollMagic.Controller();
                 var scene1 = new ScrollMagic.Scene({
                     triggerElement: '#scene-1',
                     offset: 50
                 })
-                .setTween("#scene-1", 0.6, {backgroundColor: "transparent", scale: 1.2})
+                .setTween("#scene-1", 0.6, {backgroundColor: "transparent", scale: 1.2,zIndex:9999})
                 .addTo(scrollMagicController);
                 
-                
+                //Second Group
                 var scene2 = new ScrollMagic.Scene({
                     triggerElement: '#scene-2',
                     offset: 50
                 })
-                .setTween("#scene-2", 0.6, {backgroundColor: "transparent", scale: 1.1,alpha:1})
+                .setTween("#scene-2", 0.6, {backgroundColor: "transparent", scale: 1.1,alpha:1,zIndex:9999})
                 .addTo(scrollMagicController);
                 
-                
-                var scene2 = new ScrollMagic.Scene({
+                var background2 = new ScrollMagic.Scene({
                     triggerElement: '.wrap-2',
                     offset: 50
                 })
-                .setTween(".wrap-2", 0.6, {backgroundColor: "red",alpha:0.5})
+                .setTween(".wrap-2", 0.6, {backgroundColor: "#00FFCC"})
+                .addTo(scrollMagicController);
+                
+        
+                //Third Group
+                var scene3 = new ScrollMagic.Scene({
+                    triggerElement: '#scene-3',
+                    offset: 50
+                })
+                .setTween("#scene-3", 0.6, {backgroundColor: "transparent", scale: 1.1,alpha:1,zIndex:9999})
+                .addTo(scrollMagicController);
+                
+                var background3 = new ScrollMagic.Scene({
+                    triggerElement: '.wrap-3',
+                    offset: 50
+                })
+                .setTween(".wrap-3", 0.6, {backgroundColor: "#CC9900",zIndex:9999})
                 .addTo(scrollMagicController);
         
+                
+                //Forth Group
+                var scene4 = new ScrollMagic.Scene({
+                    triggerElement: '#scene-4',
+                    offset: 50
+                })
+                .setTween("#scene-4", 0.6, {backgroundColor: "transparent", scale: 1.1,alpha:1,zIndex:9999})
+                .addTo(scrollMagicController);
+                
+                var background3 = new ScrollMagic.Scene({
+                    triggerElement: '.wrap-4',
+                    offset: 50
+                })
+                .setTween(".wrap-4", 0.6, {backgroundColor: "#FFEF30",zIndex:9999})
+                .addTo(scrollMagicController);
+                
+                
+                
+                //Footer Image 
+                var p1 = TweenMax.to('.xsbottom', 0.5, {
+                    height: 150
+                });
+                
+                var p2 = TweenMax.to('.xsbottom', 0.5, {
+                    height: 250
+                });
+                
+                var p3 = TweenMax.to('.xsbottom', 0.5, {
+                    height: 400
+                });
+                
+                var p4 = TweenMax.to('.xsbottom', 0.5, {
+                    height: 450
+                });
+                
+                new ScrollMagic.Scene({
+                    triggerElement: '#scene-1',
+                    offset: 10
+                }).setTween(p1)
+                .addTo(scrollMagicController);
+                
+                new ScrollMagic.Scene({
+                    triggerElement: '#scene-2',
+                    offset: 10
+                }).setTween(p2)
+                .addTo(scrollMagicController);
+                
+                
+                new ScrollMagic.Scene({
+                    triggerElement: '#scene-3',
+                    offset: 10
+                }).setTween(p3)
+                .addTo(scrollMagicController);
+                
+                
+                new ScrollMagic.Scene({
+                    triggerElement: '#scene-4',
+                    offset: 10
+                }).setTween(p4)
+                .addTo(scrollMagicController);
                 
                 
             });
