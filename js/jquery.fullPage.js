@@ -736,11 +736,8 @@
 
                         nav.find('ul:first').append(li);
 
-
-
                         var ulid = 'ulid' + i;
                         nav.find('ul:first ').append('<li><ul id="' + ulid + '"></ul></li>');
-                        console.log(thisOpt);
                         for (var conts = 1 ; conts < thisOpt.length; conts++) {
                             if (thisOpt.length) {
                                 link = thisOpt[conts];
@@ -1224,8 +1221,8 @@
         function scrollPage(element, callback, isMovementUp){
             var dest = element.position();
             if(typeof dest === 'undefined'){ return; } //there's no element to scroll, leaving the function
-console.log('dest')
-console.log(element)
+//console.log('dest')
+//console.log(element)
             //local variables
             var v = {
                 element: element,
@@ -1244,7 +1241,7 @@ console.log(element)
                 //because it will be checked later inside a setTimeout and the value might change
                 localIsResizing: isResizing
             };
-console.log(v)
+//console.log(v)
             //quiting when destination scroll is the same as the current one
             if((v.activeSection.is(element) && !isResizing) || (options.scrollBar && $window.scrollTop() === v.dtop)){ return; }
 
@@ -1634,9 +1631,12 @@ console.log(v)
         * Scrolls to the section when clicking the navigation bullet
         */
         $document.on('click touchstart', SECTION_NAV_SEL + ' a', function(e){
+            console.log(this)
             e.preventDefault();
             var index = $(this).parent().index();
-            scrollPage($(SECTION_SEL).eq(index));
+//            scrollPage($(SECTION_SEL).eq(index));
+            var targ = $(this).attr('href').replace('page', 'section')
+            scrollPage($(targ));
         });
 
         /**
