@@ -737,7 +737,7 @@
                         nav.find('ul:first').append(li);
 
                         var ulid = 'ulid' + i;
-                        nav.find('ul:first ').append('<li><ul id="' + ulid + '"></ul></li>');
+                        nav.find('ul:first li:last ').append('<ul id="' + ulid + '"></ul>');
                         for (var conts = 1 ; conts < thisOpt.length; conts++) {
                             if (thisOpt.length) {
                                 link = thisOpt[conts];
@@ -1858,11 +1858,15 @@
          */
         function activateNavDots(name, sectionIndex){
             if(options.navigation){
+//                console.log($(SECTION_NAV_SEL + " li"))
                 $(SECTION_NAV_SEL).find(ACTIVE_SEL).removeClass(ACTIVE);
+                $(SECTION_NAV_SEL + " li").removeClass('selected');
                 if(name){
                     $(SECTION_NAV_SEL).find('a[href="#' + name + '"]').addClass(ACTIVE);
+                    $(SECTION_NAV_SEL).find('a[href="#' + name + '"]').parents('li').addClass('selected');
                 }else{
                     $(SECTION_NAV_SEL).find('li').eq(sectionIndex).find('a').addClass(ACTIVE);
+                    $(SECTION_NAV_SEL).find('li').eq(sectionIndex).find('a').parents('li').addClass('selected');
                 }
             }
         }
