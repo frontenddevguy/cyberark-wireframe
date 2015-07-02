@@ -6,7 +6,7 @@ $(function () {
         triggerElement: '#scene-1',
         offset: 50
     })
-            .setTween("#scene-1", 0.6, {backgroundColor: "transparent", scale: 1.2, zIndex: 9999})
+            .setTween("#scene-1", 0.6, {backgroundColor: "transparent", scale: 1.2, zIndex: 99})
             .addTo(scrollMagicController);
 
     //Second Group
@@ -14,7 +14,7 @@ $(function () {
         triggerElement: '#scene-2',
         offset: 50
     })
-            .setTween("#scene-2", 0.6, {backgroundColor: "transparent", scale: 1.1, alpha: 1, zIndex: 9999})
+            .setTween("#scene-2", 0.6, {backgroundColor: "transparent", scale: 1.1, alpha: 1, zIndex: 99})
             .addTo(scrollMagicController);
 
     var background2 = new ScrollMagic.Scene({
@@ -30,14 +30,14 @@ $(function () {
         triggerElement: '#scene-3',
         offset: 50
     })
-            .setTween("#scene-3", 0.6, {backgroundColor: "transparent", scale: 1.1, alpha: 1, zIndex: 9999})
+            .setTween("#scene-3", 0.6, {backgroundColor: "transparent", scale: 1.1, alpha: 1, zIndex: 99})
             .addTo(scrollMagicController);
 
     var background3 = new ScrollMagic.Scene({
         triggerElement: '.wrap-3',
         offset: 50
     })
-            .setTween(".wrap-3", 0.6, {backgroundColor: "#CC9900", zIndex: 9999})
+            .setTween(".wrap-3", 0.6, {backgroundColor: "#CC9900", zIndex: 99})
             .addTo(scrollMagicController);
 
 
@@ -46,14 +46,14 @@ $(function () {
         triggerElement: '#scene-4',
         offset: 50
     })
-            .setTween("#scene-4", 0.6, {backgroundColor: "transparent", scale: 1.1, alpha: 1, zIndex: 9999})
+            .setTween("#scene-4", 0.6, {backgroundColor: "transparent", scale: 1.1, alpha: 1, zIndex: 99})
             .addTo(scrollMagicController);
 
     var background3 = new ScrollMagic.Scene({
         triggerElement: '.wrap-4',
         offset: 50
     })
-            .setTween(".wrap-4", 0.6, {backgroundColor: "#FFEF30", zIndex: 9999})
+            .setTween(".wrap-4", 0.6, {backgroundColor: "#FFEF30", zIndex: 99})
             .addTo(scrollMagicController);
 
 
