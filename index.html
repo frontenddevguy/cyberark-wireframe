@@ -6,276 +6,127 @@
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/style.css">
+        <!--<link rel="stylesheet" href="css/jquery.pagepiling.css">-->
+          <link rel="stylesheet" href="css/jquery.fullPage.css">
+        <link rel="stylesheet" href="css/animations.css">
 
         <!-- Latest compiled and minified JavaScript -->
         <script src="js/jquery-1.10.2.js"></script>
         <script src="js/bootstrap.min.js"></script>
-
-
     </head>
     <body>
-        <style>
-            .containerwrap .xs-row{
-                height: 100vh;
-            }
-            
-            .xs-navigator {
-                    background: transparent;
-                    height: 134px;
-                    position: fixed;
-                    right: 0;
-                    top: 38%;
-                    width: 65px;
-                    z-index: 9999;
-            }
-            .xs-navigator ul{
-                list-style: none;
-            }
-            
-            .xs-navigator ul li a {
-            background: #797c80 none repeat scroll 0 0;
-            border: 1px solid #797c80;
-            border-radius: 100px;
-            height: 10px;
-            margin-bottom: 20px;
-            width: 10px;
-            display: block;
-            text-indent: -9999px;
-          }
-            
-            .xs-navigator ul li.active a{
-                background: #00AFF0 none repeat scroll 0 0;
-                border: 1px solid #00AFF0;
-            }
-            .xs-slogan{
-                font-size: 27px;
-            }
-            .slogan-part-1{
-                color: #464646;
-            }
-            .slogan-part-2{
-                color: #1563AC;
-                font-weight: bold;
-            }
-            
-            .centered {
-               left: 18%;
-                position: absolute;
-                top: 40vh;
-                width: 790px;
-            }
-            
-            #scene-1 p{
-                font-size: 30px;
-            }
-            .wrap-1{
-                background: #00CCCC;    
-            }
-            
-            #scene-2{
-                opacity: 0;
-            }
-            
-            #scene-3{
-                opacity: 0;
-            }
-            
-            .xsbottom{
-                border:1px solid red;
-                bottom:0;
-                position:fixed;
-                width:20%;
-            }
-            #xsbottom2{
-                right: 0;
-            }
-            #xsbottom3{
-                right: 50%;
-            }
-        </style>
-        <section>
-            <div class="containerwrap">
-                <div class="row xs-row wrap-1">
-                    <div class="col-md-12">
-                        <div class="wrap centered" id="scene-1">  
-                            <div class="col-md-4"><span class="xs-slogan slogan-part-1">CYBER</span><span class="xs-slogan slogan-part-2">ARC</span></div>
-                            <div class="col-md-8">
-                                <p class=""><span class="slogan-part-2">PROTECTION</span> FOR YOUR ORGANIZATION'S IS MOST VALUABLE ASSETS</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="row xs-row wrap-2">
-                    <div class="col-md-12">
-                        <div class="wrap centered" id="scene-2">  
-                            <div class="col-md-4">
-                                <span class="xs-slogan slogan-part-2">PROTECTION</span> 
-                                <span class="xs-slogan slogan-part-1">FOR YOUR ORGANIZATION'S IS MOST VALUABLE ASSETS</span>
-                            </div>
-                            <div class="col-md-8">
-                                <p class="">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-                                </p>
-                            </div>
+        <div class="containerwrap" id="pagepiling">
+            <div class="row section xs-row wrap-1" id="section1">
+                <div class="col-md-12">
+                    <div class="wrap centered" id="scene-1">
+                        <div class="col-md-4"><span class="xs-slogan slogan-part-1">CYBER</span><span class="xs-slogan slogan-part-2">ARC</span></div>
+                        <div class="col-md-8">
+                            <p class=""><span class="slogan-part-2">PROTECTION</span> FOR YOUR ORGANIZATION'S IS MOST VALUABLE ASSETS</p>
                         </div>
                     </div>
                 </div>
-                
-                <div class="row xs-row wrap-3">
-                    <div class="col-md-12">
-                        <div class="wrap centered" id="scene-3">  
-                            <div class="col-md-8">
-                                <p class="">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                
-                <div class="row xs-row wrap-4">
-                    <div class="col-md-12">
-                        <div class="wrap centered" id="scene-4">  
-                            <div class="col-md-8">
-                                <p class="">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            </div>
 
+            <div class="row xs-row wrap-2 section" id="section2">
+                <div class="col-md-12">
+                    <div class="wrap centered" id="scene-2">
+                        <div class="col-md-4">
+                            <span class="xs-slogan slogan-part-2">PROTECTION</span>
+                            <span class="xs-slogan slogan-part-1">FOR YOUR ORGANIZATION'S IS MOST VALUABLE ASSETS</span>
+                        </div>
+                        <div class="col-md-8">
+                            <p class="">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-            <div class="xs-navigator">
-                <ul>
-                    <li class="active"><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li> 
-                    <li><a href="#"></a></li>
-                </ul>
+
+            <div class="row xs-row wrap-3 section" id="section3">
+                <div class="col-md-12">
+                    <div class="wrap centered" id="scene-3">
+                        <div class="col-md-8">
+                            <p class="">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-            <div class="xsbottom" id="xsbottom1"></div>
-            <div class="xsbottom" id="xsbottom2"></div>
-            <div class="xsbottom" id="xsbottom3"></div>
-            
-        </section>
-        
+
+
+            <div class="row xs-row wrap-4 section" id="section4">
+                <div class="col-md-12">
+                    <div class="wrap centered" id="scene-4">
+                        <div class="col-md-8">
+                            <p class="">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row xs-row wrap-5 section" id="section5">
+                <div class="col-md-12">
+                    <div class="wrap centered" id="scene-5">
+                        <div class="col-md-8">
+                            <p class="">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row xs-row wrap-6 section" id="section6">
+                <div class="col-md-12">
+                    <div class="wrap centered" id="scene-6">
+                        <div class="col-md-8">
+                            <p class="">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row xs-row wrap-7 section" id="section7">
+                <div class="col-md-12">
+                    <div class="wrap centered" id="scene-7">
+                        <div class="col-md-8">
+                            <p class="">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--            <div class="xs-navigator">
+                        <ul>
+                            <li class="active"><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="xsbottom" id="xsbottom1"></div>
+                    <div class="xsbottom" id="xsbottom2"></div>
+                    <div class="xsbottom" id="xsbottom3"></div>-->
+
+
         <script src="js/TweenMax.min.js"></script>
         <script src="js/ScrollMagic.js"></script>
         <script src="js/animation.gsap.js"></script>
-        
+        <!--<script src="js/jquery.pagepiling.min.js"></script>-->
+        <script src="js/jquery.fullPage.js"></script>
         <script src="js/debug.addIndicators.min.js"></script>
-        <script>
-            $(function() {
-                
-                //First Group
-                var scrollMagicController = new ScrollMagic.Controller();
-                var scene1 = new ScrollMagic.Scene({
-                    triggerElement: '#scene-1',
-                    offset: 50
-                })
-                .setTween("#scene-1", 0.6, {backgroundColor: "transparent", scale: 1.2,zIndex:9999})
-                .addTo(scrollMagicController);
-                
-                //Second Group
-                var scene2 = new ScrollMagic.Scene({
-                    triggerElement: '#scene-2',
-                    offset: 50
-                })
-                .setTween("#scene-2", 0.6, {backgroundColor: "transparent", scale: 1.1,alpha:1,zIndex:9999})
-                .addTo(scrollMagicController);
-                
-                var background2 = new ScrollMagic.Scene({
-                    triggerElement: '.wrap-2',
-                    offset: 50
-                })
-                .setTween(".wrap-2", 0.6, {backgroundColor: "#00FFCC"})
-                .addTo(scrollMagicController);
-                
-        
-                //Third Group
-                var scene3 = new ScrollMagic.Scene({
-                    triggerElement: '#scene-3',
-                    offset: 50
-                })
-                .setTween("#scene-3", 0.6, {backgroundColor: "transparent", scale: 1.1,alpha:1,zIndex:9999})
-                .addTo(scrollMagicController);
-                
-                var background3 = new ScrollMagic.Scene({
-                    triggerElement: '.wrap-3',
-                    offset: 50
-                })
-                .setTween(".wrap-3", 0.6, {backgroundColor: "#CC9900",zIndex:9999})
-                .addTo(scrollMagicController);
-        
-                
-                //Forth Group
-                var scene4 = new ScrollMagic.Scene({
-                    triggerElement: '#scene-4',
-                    offset: 50
-                })
-                .setTween("#scene-4", 0.6, {backgroundColor: "transparent", scale: 1.1,alpha:1,zIndex:9999})
-                .addTo(scrollMagicController);
-                
-                var background3 = new ScrollMagic.Scene({
-                    triggerElement: '.wrap-4',
-                    offset: 50
-                })
-                .setTween(".wrap-4", 0.6, {backgroundColor: "#FFEF30",zIndex:9999})
-                .addTo(scrollMagicController);
-                
-                
-                
-                //Footer Image 
-                var p1 = TweenMax.to('.xsbottom', 0.5, {
-                    height: 150
-                });
-                
-                var p2 = TweenMax.to('.xsbottom', 0.5, {
-                    height: 250
-                });
-                
-                var p3 = TweenMax.to('.xsbottom', 0.5, {
-                    height: 400
-                });
-                
-                var p4 = TweenMax.to('.xsbottom', 0.5, {
-                    height: 450
-                });
-                
-                new ScrollMagic.Scene({
-                    triggerElement: '#scene-1',
-                    offset: 10
-                }).setTween(p1)
-                .addTo(scrollMagicController);
-                
-                new ScrollMagic.Scene({
-                    triggerElement: '#scene-2',
-                    offset: 10
-                }).setTween(p2)
-                .addTo(scrollMagicController);
-                
-                
-                new ScrollMagic.Scene({
-                    triggerElement: '#scene-3',
-                    offset: 10
-                }).setTween(p3)
-                .addTo(scrollMagicController);
-                
-                
-                new ScrollMagic.Scene({
-                    triggerElement: '#scene-4',
-                    offset: 10
-                }).setTween(p4)
-                .addTo(scrollMagicController);
-                
-                
-            });
-        </script>
+
+        <script src="js/common.js"></script>
+        <script src="js/animations.js"></script>
+        <script></script>
     </body>
 </html>
