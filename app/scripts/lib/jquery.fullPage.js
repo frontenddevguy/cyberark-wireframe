@@ -2204,7 +2204,8 @@
             }
 
             //changing slash for dash to make it a valid CSS style
-            text = text.replace('/', '-').replace('#','');
+            if(text)
+                text = text.replace('/', '-').replace('#','');
 
             //removing previous anchor classes
             var classRe = new RegExp('\\b\\s?' + VIEWING_PREFIX + '-[^\\s]+\\b', "g");

@@ -1,0 +1,131 @@
+/*common*/
+#fp-nav ul li, .fp-slidesNav ul li{
+    margin : 7px 0px;
+    min-height: 13px;
+    height: auto;
+}
+#fp-nav ul li a, .fp-slidesNav ul li a{
+    min-height: 13px;
+    height: auto;
+}
+
+#fp-nav ul li ul li a span, .fp-slidesNav ul li ul li a span{
+    background : red;
+
+}
+#fp-nav{
+    z-index: 99999;
+}
+#fp-nav ul li ul{
+    display :none;
+}
+
+#fp-nav ul li.selected ul{
+    display :block;
+}
+#fp-nav ul li.selected > a span:first-child {
+    height: 12px;
+    margin: -6px 0 0 -6px;
+    width: 12px;
+}
+
+
+//////////////////
+
+.containerwrap .xs-row{
+    height: 100vh;
+}
+
+.xs-navigator {
+    background: transparent;
+    height: 134px;
+    position: fixed;
+    right: 0;
+    top: 38%;
+    width: 65px;
+    z-index: 9999;
+}
+.xs-navigator ul{
+    list-style: none;
+}
+
+.xs-navigator ul li a {
+    background: #797c80 none repeat scroll 0 0;
+    border: 1px solid #797c80;
+    border-radius: 100px;
+    height: 10px;
+    margin-bottom: 20px;
+    width: 10px;
+    display: block;
+    text-indent: -9999px;
+}
+
+.xs-navigator ul li.active a{
+    background: #00AFF0 none repeat scroll 0 0;
+    border: 1px solid #00AFF0;
+}
+.xs-slogan{
+    font-size: 27px;
+}
+.slogan-part-1{
+    color: #464646;
+}
+.slogan-part-2{
+    color: #1563AC;
+    font-weight: bold;
+}
+
+.centered {
+    left: 18%;
+    position: absolute;
+    /*top: 40vh;*/
+    width: 790px;
+}
+
+#scene-1 p{
+    font-size: 30px;
+}
+.wrap-1{
+    background: #00CCCC;
+}
+
+#scene-2{
+    opacity: 1;
+}
+
+#scene-3{
+    opacity: 1;
+}
+
+.xsbottom{
+    border:1px solid red;
+    bottom:0;
+    position:fixed;
+    width:20%;
+    z-index: 100;
+}
+#xsbottom2{
+    right: 0;
+}
+#xsbottom3{
+    right: 50%;
+}
+.row{
+    margin :0;
+}
+
+
+// #xsbottom-bg {
+//     background: url('../images/bg_buildings.png') no-repeat 0 0;
+//     background-size: cover;
+//     border: 1px solid green;
+//     height: 186px;
+//     width: 100%;
+// }
+
+
+
+
+
+
+

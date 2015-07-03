@@ -1,8 +1,13 @@
-$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+// $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+
+@import 'jquery.fullPage';
+@import 'animations';
+
 
 // bower:scss
 @import "bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
+
 
 @import 'defaults';
 
@@ -17,3 +22,5 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 @import 'footer';
 @import 'responsive';
 @import 'helpers';
+
+

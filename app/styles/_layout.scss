@@ -3,6 +3,25 @@
 
 }
 
+.overlay-top,
+.overlay-bottom {
+	@include gradient-horizontal($start-color: rgba(0,0,0,.5), $end-color: rgba(0,0,0,.0001));
+	position: fixed;
+	width: 100%;
+	height: 60px;
+	border: 1px solid red;
+
+	z-index: 2000;
+}
+
+.overlay-top {
+	top: 0;
+}
+
+.overlay-bottom {
+	bottom: 0;
+}
+
 section,
 .pp-section {
 	background-color: $white;
@@ -31,4 +50,8 @@ section,
 			}
 		}	
 	}
+}
+
+.carousel {
+	height: 200px;
 }
