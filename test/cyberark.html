@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html style="overflow: visible; height: initial;" class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths fp-enabled" lang=""><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>cyberark</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="http://localhost:9001/favicon.ico">
+    <link rel="apple-touch-icon" href="http://localhost:9001/apple-touch-icon.png">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="cyberark_files/main.css">
+    <!-- endbuild -->
+    <!-- <link rel="stylesheet" href="bower_components/pagepiling.js/jquery.pagepiling.css"> -->
+    <link rel="stylesheet" href="cyberark_files/jquery.css">
+    <link rel="stylesheet" href="cyberark_files/animations.css">
+    
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="cyberark_files/analytics.js"></script><script src="cyberark_files/modernizr.js"></script>
+    <!-- endbuild -->
+    <!--<script src="bower_components/requirejs/require.js"></script>-->
+  <style class="firebugResetStyles" type="text/css" charset="utf-8">/* See license.txt for terms of usage */
+/** reset styling **/
+.firebugResetStyles {
+    z-index: 2147483646 !important;
+    top: 0 !important;
+    left: 0 !important;
+    display: block !important;
+    border: 0 none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    outline: 0 !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    position: fixed !important;
+    transform: rotate(0deg) !important;
+    transform-origin: 50% 50% !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background: transparent none !important;
+    pointer-events: none !important;
+    white-space: normal !important;
+}
+style.firebugResetStyles {
+    display: none !important;
+}
+
+.firebugBlockBackgroundColor {
+    background-color: transparent !important;
+}
+
+.firebugResetStyles:before, .firebugResetStyles:after {
+    content: "" !important;
+}
+/**actual styling to be modified by firebug theme**/
+.firebugCanvas {
+    display: none !important;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.firebugLayoutBox {
+    width: auto !important;
+    position: static !important;
+}
+
+.firebugLayoutBoxOffset {
+    opacity: 0.8 !important;
+    position: fixed !important;
+}
+
+.firebugLayoutLine {
+    opacity: 0.4 !important;
+    background-color: #000000 !important;
+}
+
+.firebugLayoutLineLeft, .firebugLayoutLineRight {
+    width: 1px !important;
+    height: 100% !important;
+}
+
+.firebugLayoutLineTop, .firebugLayoutLineBottom {
+    width: 100% !important;
+    height: 1px !important;
+}
+
+.firebugLayoutLineTop {
+    margin-top: -1px !important;
+    border-top: 1px solid #999999 !important;
+}
+
+.firebugLayoutLineRight {
+    border-right: 1px solid #999999 !important;
+}
+
+.firebugLayoutLineBottom {
+    border-bottom: 1px solid #999999 !important;
+}
+
+.firebugLayoutLineLeft {
+    margin-left: -1px !important;
+    border-left: 1px solid #999999 !important;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.firebugLayoutBoxParent {
+    border-top: 0 none !important;
+    border-right: 1px dashed #E00 !important;
+    border-bottom: 1px dashed #E00 !important;
+    border-left: 0 none !important;
+    position: fixed !important;
+    width: auto !important;
+}
+
+.firebugRuler{
+    position: absolute !important;
+}
+
+.firebugRulerH {
+    top: -15px !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 14px !important;
+    background: url("data:image/png,%89PNG%0D%0A%1A%0A%00%00%00%0DIHDR%00%00%13%88%00%00%00%0E%08%02%00%00%00L%25a%0A%00%00%00%04gAMA%00%00%D6%D8%D4OX2%00%00%00%19tEXtSoftware%00Adobe%20ImageReadyq%C9e%3C%00%00%04%F8IDATx%DA%EC%DD%D1n%E2%3A%00E%D1%80%F8%FF%EF%E2%AF2%95%D0D4%0E%C1%14%B0%8Fa-%E9%3E%CC%9C%87n%B9%81%A6W0%1C%A6i%9A%E7y%0As8%1CT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AATE9%FE%FCw%3E%9F%AF%2B%2F%BA%97%FDT%1D~K(%5C%9D%D5%EA%1B%5C%86%B5%A9%BDU%B5y%80%ED%AB*%03%FAV9%AB%E1%CEj%E7%82%EF%FB%18%BC%AEJ8%AB%FA'%D2%BEU9%D7U%ECc0%E1%A2r%5DynwVi%CFW%7F%BB%17%7Dy%EACU%CD%0E%F0%FA%3BX%FEbV%FEM%9B%2B%AD%BE%AA%E5%95v%AB%AA%E3E5%DCu%15rV9%07%B5%7F%B5w%FCm%BA%BE%AA%FBY%3D%14%F0%EE%C7%60%0EU%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5JU%88%D3%F5%1F%AE%DF%3B%1B%F2%3E%DAUCNa%F92%D02%AC%7Dm%F9%3A%D4%F2%8B6%AE*%BF%5C%C2Ym~9g5%D0Y%95%17%7C%C8c%B0%7C%18%26%9CU%CD%13i%F7%AA%90%B3Z%7D%95%B4%C7%60%E6E%B5%BC%05%B4%FBY%95U%9E%DB%FD%1C%FC%E0%9F%83%7F%BE%17%7DkjMU%E3%03%AC%7CWj%DF%83%9An%BCG%AE%F1%95%96yQ%0Dq%5Dy%00%3Et%B5'%FC6%5DS%95pV%95%01%81%FF'%07%00%00%00%00%00%00%00%00%00%F8x%C7%F0%BE%9COp%5D%C9%7C%AD%E7%E6%EBV%FB%1E%E0(%07%E5%AC%C6%3A%ABi%9C%8F%C6%0E9%AB%C0'%D2%8E%9F%F99%D0E%B5%99%14%F5%0D%CD%7F%24%C6%DEH%B8%E9rV%DFs%DB%D0%F7%00k%FE%1D%84%84%83J%B8%E3%BA%FB%EF%20%84%1C%D7%AD%B0%8E%D7U%C8Y%05%1E%D4t%EF%AD%95Q%BF8w%BF%E9%0A%BF%EB%03%00%00%00%00%00%00%00%00%00%B8vJ%8E%BB%F5%B1u%8Cx%80%E1o%5E%CA9%AB%CB%CB%8E%03%DF%1D%B7T%25%9C%D5(%EFJM8%AB%CC'%D2%B2*%A4s%E7c6%FB%3E%FA%A2%1E%80~%0E%3E%DA%10x%5D%95Uig%15u%15%ED%7C%14%B6%87%A1%3B%FCo8%A8%D8o%D3%ADO%01%EDx%83%1A~%1B%9FpP%A3%DC%C6'%9C%95gK%00%00%00%00%00%00%00%00%00%20%D9%C9%11%D0%C0%40%AF%3F%EE%EE%92%94%D6%16X%B5%BCMH%15%2F%BF%D4%A7%C87%F1%8E%F2%81%AE%AAvzr%DA2%ABV%17%7C%E63%83%E7I%DC%C6%0Bs%1B%EF6%1E%00%00%00%00%00%00%00%00%00%80cr%9CW%FF%7F%C6%01%0E%F1%CE%A5%84%B3%CA%BC%E0%CB%AA%84%CE%F9%BF)%EC%13%08WU%AE%AB%B1%AE%2BO%EC%8E%CBYe%FE%8CN%ABr%5Dy%60~%CFA%0D%F4%AE%D4%BE%C75%CA%EDVB%EA(%B7%F1%09g%E5%D9%12%00%00%00%00%00%00%00%00%00H%F6%EB%13S%E7y%5E%5E%FB%98%F0%22%D1%B2'%A7%F0%92%B1%BC%24z3%AC%7Dm%60%D5%92%B4%7CEUO%5E%F0%AA*%3BU%B9%AE%3E%A0j%94%07%A0%C7%A0%AB%FD%B5%3F%A0%F7%03T%3Dy%D7%F7%D6%D4%C0%AAU%D2%E6%DFt%3F%A8%CC%AA%F2%86%B9%D7%F5%1F%18%E6%01%F8%CC%D5%9E%F0%F3z%88%AA%90%EF%20%00%00%00%00%00%00%00%00%00%C0%A6%D3%EA%CFi%AFb%2C%7BB%0A%2B%C3%1A%D7%06V%D5%07%A8r%5D%3D%D9%A6%CAu%F5%25%CF%A2%99%97zNX%60%95%AB%5DUZ%D5%FBR%03%AB%1C%D4k%9F%3F%BB%5C%FF%81a%AE%AB'%7F%F3%EA%FE%F3z%94%AA%D8%DF%5B%01%00%00%00%00%00%00%00%00%00%8E%FB%F3%F2%B1%1B%8DWU%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*UiU%C7%BBe%E7%F3%B9%CB%AAJ%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5*%AAj%FD%C6%D4%5Eo%90%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5%86%AF%1B%9F%98%DA%EBm%BBV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%AD%D6%E4%F58%01%00%00%00%00%00%00%00%00%00%00%00%00%00%40%85%7F%02%0C%008%C2%D0H%16j%8FX%00%00%00%00IEND%AEB%60%82") repeat-x !important;
+    border-top: 1px solid #BBBBBB !important;
+    border-right: 1px dashed #BBBBBB !important;
+    border-bottom: 1px solid #000000 !important;
+}
+
+.firebugRulerV {
+    top: 0 !important;
+    left: -15px !important;
+    width: 14px !important;
+    height: 100% !important;
+    background: url("data:image/png,%89PNG%0D%0A%1A%0A%00%00%00%0DIHDR%00%00%00%0E%00%00%13%88%08%02%00%00%00%0E%F5%CB%10%00%00%00%04gAMA%00%00%D6%D8%D4OX2%00%00%00%19tEXtSoftware%00Adobe%20ImageReadyq%C9e%3C%00%00%06~IDATx%DA%EC%DD%D1v%A20%14%40Qt%F1%FF%FF%E4%97%D9%07%3BT%19%92%DC%40(%90%EEy%9A5%CB%B6%E8%F6%9Ac%A4%CC0%84%FF%DC%9E%CF%E7%E3%F1%88%DE4%F8%5D%C7%9F%2F%BA%DD%5E%7FI%7D%F18%DDn%BA%C5%FB%DF%97%BFk%F2%10%FF%FD%B4%F2M%A7%FB%FD%FD%B3%22%07p%8F%3F%AE%E3%F4S%8A%8F%40%EEq%9D%BE8D%F0%0EY%A1Uq%B7%EA%1F%81%88V%E8X%3F%B4%CEy%B7h%D1%A2E%EBohU%FC%D9%AF2fO%8BBeD%BE%F7X%0C%97%A4%D6b7%2Ck%A5%12%E3%9B%60v%B7r%C7%1AI%8C%BD%2B%23r%00c0%B2v%9B%AD%CA%26%0C%1Ek%05A%FD%93%D0%2B%A1u%8B%16-%95q%5Ce%DCSO%8E%E4M%23%8B%F7%C2%FE%40%BB%BD%8C%FC%8A%B5V%EBu%40%F9%3B%A72%FA%AE%8C%D4%01%CC%B5%DA%13%9CB%AB%E2I%18%24%B0n%A9%0CZ*Ce%9C%A22%8E%D8NJ%1E%EB%FF%8F%AE%CAP%19*%C3%BAEKe%AC%D1%AAX%8C*%DEH%8F%C5W%A1e%AD%D4%B7%5C%5B%19%C5%DB%0D%EF%9F%19%1D%7B%5E%86%BD%0C%95%A12%AC%5B*%83%96%CAP%19%F62T%86%CAP%19*%83%96%CA%B8Xe%BC%FE)T%19%A1%17xg%7F%DA%CBP%19*%C3%BA%A52T%86%CAP%19%F62T%86%CA%B0n%A9%0CZ%1DV%C6%3D%F3%FCH%DE%B4%B8~%7F%5CZc%F1%D6%1F%AF%84%F9%0F6%E6%EBVt9%0E~%BEr%AF%23%B0%97%A12T%86%CAP%19%B4T%86%CA%B8Re%D8%CBP%19*%C3%BA%A52huX%19%AE%CA%E5%BC%0C%7B%19*CeX%B7h%A9%0C%95%E1%BC%0C%7B%19*CeX%B7T%06%AD%CB%5E%95%2B%BF.%8F%C5%97%D5%E4%7B%EE%82%D6%FB%CF-%9C%FD%B9%CF%3By%7B%19%F62T%86%CA%B0n%D1R%19*%A3%D3%CA%B0%97%A12T%86uKe%D0%EA%B02*%3F1%99%5DB%2B%A4%B5%F8%3A%7C%BA%2B%8Co%7D%5C%EDe%A8%0C%95a%DDR%19%B4T%C66%82fA%B2%ED%DA%9FC%FC%17GZ%06%C9%E1%B3%E5%2C%1A%9FoiB%EB%96%CA%A0%D5qe4%7B%7D%FD%85%F7%5B%ED_%E0s%07%F0k%951%ECr%0D%B5C%D7-g%D1%A8%0C%EB%96%CA%A0%A52T%C6)*%C3%5E%86%CAP%19%D6-%95A%EB*%95q%F8%BB%E3%F9%AB%F6%E21%ACZ%B7%22%B7%9B%3F%02%85%CB%A2%5B%B7%BA%5E%B7%9C%97%E1%BC%0C%EB%16-%95%A12z%AC%0C%BFc%A22T%86uKe%D0%EA%B02V%DD%AD%8A%2B%8CWhe%5E%AF%CF%F5%3B%26%CE%CBh%5C%19%CE%CB%B0%F3%A4%095%A1%CAP%19*Ce%A8%0C%3BO*Ce%A8%0C%95%A12%3A%AD%8C%0A%82%7B%F0v%1F%2FD%A9%5B%9F%EE%EA%26%AF%03%CA%DF9%7B%19*Ce%A8%0C%95%A12T%86%CA%B8Ze%D8%CBP%19*Ce%A8%0C%95%D1ae%EC%F7%89I%E1%B4%D7M%D7P%8BjU%5C%BB%3E%F2%20%D8%CBP%19*Ce%A8%0C%95%A12T%C6%D5*%C3%5E%86%CAP%19*Ce%B4O%07%7B%F0W%7Bw%1C%7C%1A%8C%B3%3B%D1%EE%AA%5C%D6-%EBV%83%80%5E%D0%CA%10%5CU%2BD%E07YU%86%CAP%19*%E3%9A%95%91%D9%A0%C8%AD%5B%EDv%9E%82%FFKOee%E4%8FUe%A8%0C%95%A12T%C6%1F%A9%8C%C8%3D%5B%A5%15%FD%14%22r%E7B%9F%17l%F8%BF%ED%EAf%2B%7F%CF%ECe%D8%CBP%19*Ce%A8%0C%95%E1%93~%7B%19%F62T%86%CAP%19*Ce%A8%0C%E7%13%DA%CBP%19*Ce%A8%0CZf%8B%16-Z%B4h%D1R%19f%8B%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1%A2%A52%CC%16-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2EKe%98-Z%B4h%D1%A2EKe%D02%5B%B4h%D1%A2EKe%D02%5B%B4h%D1%A2E%8B%96%CA0%5B%B4h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%16-%95a%B6h%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-Z*%C3l%D1%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z%B4T%86%D9%A2E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4h%A9%0C%B3E%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%D1R%19f%8B%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1%A2%A52%CC%16-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2EKe%98-Z%B4h%D1%A2EKe%D02%5B%B4h%D1%A2EKe%D02%5B%B4h%D1%A2E%8B%96%CA0%5B%B4h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%16-%95a%B6h%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-Z*%C3l%D1%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z%B4T%86%D9%A2E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4h%A9%0C%B3E%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%D1R%19f%8B%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1%A2%A52%CC%16-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2EKe%98-Z%B4h%D1%A2EKe%D02%5B%B4h%D1%A2EKe%D02%5B%B4h%D1%A2E%8B%96%CA0%5B%B4h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%16-%95a%B6h%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-Z*%C3l%D1%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z%B4T%86%D9%A2E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4%AE%A4%F5%25%C0%00%DE%BF%5C'%0F%DA%B8q%00%00%00%00IEND%AEB%60%82") repeat-y !important;
+    border-left: 1px solid #BBBBBB !important;
+    border-right: 1px solid #000000 !important;
+    border-bottom: 1px dashed #BBBBBB !important;
+}
+
+.overflowRulerX > .firebugRulerV {
+    left: 0 !important;
+}
+
+.overflowRulerY > .firebugRulerH {
+    top: 0 !important;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.fbProxyElement {
+    position: fixed !important;
+    pointer-events: auto !important;
+}
+</style></head>
+  <body class="fp-viewing-page7" style="overflow: visible; height: initial;"><script type="text/javascript" id="__bs_script__">//<![CDATA[
+    document.write("<script async src='/browser-sync/browser-sync-client.2.7.13.js'><\/script>".replace("HOST", location.hostname));
+//]]></script><script async="" src="cyberark_files/browser-sync-client.js"></script>
+
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+
+    <div style="height: 100%; position: relative;" class="containerwrap fullpage-wrapper" id="pagepiling">
+
+      <div data-anchor="page1" style="height: 528px; background-color: rgb(242, 242, 242);" class="section landing fp-section fp-table" id="section1"><div class="fp-tableCell" style="height:528px;">
+
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-3 col-md-offset-1"> 
+              <img src="cyberark_files/logo_cyberark.png" class="logo-main">
+            </div>
+
+            <div class="col-sm-12 col-md-5">
+              <h1><b>PROTECTION</b> FOR YOUR ORGANIZATION’S MOST VALUABLE ASSETS</h1>
+
+              <p>Click or scroll to find out more</p>
+
+            </div>
+          </div>
+        </div>
+      </div></div>
+
+      <div data-anchor="page2" style="height: 528px; background-color: rgb(75, 191, 195);" class="section intro fp-section fp-table" id="section2"><div class="fp-tableCell" style="height:528px;">
+
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-10 col-md-3 col-md-offset-1"> 
+
+              <h1><b>PROTECTION</b> FOR YOUR ORGANIZATION’S MOST VALUABLE ASSETS</h1>
+            </div>
+
+            <div class="col-sm-10 col-md-5">
+              <p>Privileged account credentials are the keys to the IT 
+kingdom. They provide access to your most valuable assets and are a 
+cyber attacker’s prime target. In the wrong hands, they can be used for 
+bypassing security controls and monitoring, taking over your systems, 
+stealing sensitive data, committing financial fraud and causing other 
+damaging impacts to your business.</p> 
+
+              <p>Explore how privileged account compromise could impact 
+your organization.  Select the perspective from which you would like to 
+learn more.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid">
+          <div class="container">
+            <div class="row intro-links">
+              <div class="col-sm-5 col-md-2 col-md-offset-1">
+                <a href="#"> 
+                  <img src="cyberark_files/img_business-leadership.jpg">
+                  Business leadership                   
+                </a>
+              </div>
+
+              <div class="col-sm-5 col-md-2">
+                <a href="#"> 
+                  <img src="cyberark_files/img_business-leadership.jpg">
+                  Business leadership                   
+                </a>
+              </div>
+
+              <div class="col-sm-5 col-md-2">
+                <a href="#"> 
+                  <img src="cyberark_files/img_business-leadership.jpg">
+                  Business leadership                   
+                </a>
+              </div>
+
+              <div class="col-sm-5 col-md-2">
+                <a href="#"> 
+                  <img src="cyberark_files/img_business-leadership.jpg">
+                  Business leadership                   
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div></div>
+
+      <div data-anchor="page3" style="height: 528px; background-color: rgb(123, 170, 190);" class="section business-leadership_landing fp-section fp-table" id="section3"><div class="fp-tableCell" style="height:528px;">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-10 col-md-6 col-md-offset-4"> 
+              <h1>BUSINESS LEADERSHIP</h1>
+
+              <p>In many organizations privileged account management 
+falls somewhere between security and operations – with the result that 
+the issue can often go unaddressed. But the threats and repercussions of
+ an attack have the potential to strike at the very heart of the 
+enterprise. With so much on the line, business leaders have no option 
+but to understand privileged account security and take action to protect
+ the business.</p>
+
+              <p>Choose a topic to learn more.</p>
+
+              <ul>
+                <li>Protecting privileged accounts</li>
+                <li>The C-level perspective</li>
+              </ul>
+            </div>
+          </div>
+
+          <footer class="footer scroll-more">
+            <div class="container">
+              <div><a href="#"></a></div>
+            </div>
+          </footer>
+        </div>
+      </div></div>
+
+      <div data-anchor="page4" style="height: 528px; background-color: whitesmoke;" class="section business-leadership_sub-section protecting-pas fp-section fp-table" id="section4"><div class="fp-tableCell" style="height:528px;">
+
+        <h1>PROTECTING PRIVILEGED ACCOUNTS</h1>
+
+        <p>There is much you can do to diminish the threat from attacks 
+on privileged accounts. Adhering to a set of best practices throughout 
+your organization minimizes the number of vulnerable points left 
+exposed. You can also install an integrated privileged account security 
+solution that proactively protects your network and sensitive data, and 
+monitors, detects, alerts and responds to misuse.</p>
+
+        <ul>
+          <li>Read the CyberSheath Report: The Role of Privileged Accounts in High-Profile Breaches</li>
+          <li>Download the Three Phases of Securing Privileged Accounts: A Best Practices Guide</li>
+          <li>Watch the Video: An Integrated Privileged Account Security Solution</li>
+        </ul>
+      </div></div>
+
+      <div data-anchor="page5" style="height: 528px; background-color: rgb(204, 221, 255);" class="section business-leadership_sub-section c-level fp-section fp-table" id="section5"><div class="fp-tableCell" style="height:528px;">
+
+        <h1>THE C-LEVEL PERSPECTIVE</h1>
+
+        <p>Privileged account breaches can have serious consequences for
+ an organization, from financial loss to intellectual property theft to 
+complete business disruption. The management of privileged accounts 
+rarely sits at the C-level, but these attacks can cause the most damage.
+ Therefore they deserve strategic focus and proactive action from every 
+C-level executive.</p>
+
+        <ul>
+          <li>Read the Threat Report: Privileged Account Exploits Shift the Front Lines of Security</li>
+          <li>Download the IDC Analyst Connection: Implementing Privileged Account Security to Address Advanced Threats</li>
+          <li>Watch the Video: CyberArk Privileged Account Security Overview</li>
+        </ul>
+      </div></div>
+
+      
+      <div data-anchor="page6" style="height: 528px;" class="section it-security fp-section fp-table" id="section6"><div class="fp-tableCell" style="height:528px;">
+        <h1>IT SECURITY</h1>
+
+        <p>100% of cyber attacks involve privileged accounts. With 
+figures like that, the question is not whether security professionals 
+protect them, but how. A comprehensive solution requires a broad 
+security layer inside the network, with tiers of protection for a 
+defense-in-depth strategy. Regardless of your particular environment, a 
+reliable solution that accounts for all your requirements is a crucial 
+component.</p>
+
+        <p>Choose a topic to learn more.</p>
+
+        <ul>
+          <li>Understanding privileged account security</li>
+          <li>Protecting all systems and applications</li>
+          <li>Solution purchasing guidance</li>
+        </ul>
+
+        [Understanding privileged account security]
+
+      </div></div>
+
+      <div data-anchor="page7" style="height: 528px;" class="section it-security_sub-section understanding fp-section fp-table" id="section7"><div class="fp-tableCell" style="height:528px;">
+        <h1>UNDERSTANDING PRIVILEGED ACCOUNT SECURITY</h1>
+
+        <p>Your privileged accounts hold the keys to your IT kingdom. 
+These accounts are essential for managing systems and applications, and 
+they are everywhere in every organization. They are also a key target 
+for attackers, who covet their covert access to the most critical parts 
+of your network and the most sensitive of your data.</p>
+
+        <ul>
+          <li>Read the CyberArk Threat Report: Privileged Account Security Shifts the Front Lines of Cyber Security</li>
+          <li>Watch the Video: An Introduction to Privileged Account Security</li>
+          <li>Review our 2014 Global Advanced Threat Landscape Survey</li>
+        </ul>
+
+      </div></div>
+
+      <div style="height: 528px;" class="section it-security_sub-section protecting fp-section fp-table active" id="section8"><div class="fp-tableCell" style="height:528px;">
+        <h1>PROTECTING ALL SYSTEMS AND APPLICATIONS</h1>
+
+        <p>An effective privileged account security strategy demands 
+integration with all systems and applications in your environment. This 
+might be cloud if your business relies on IaaS or involves a lot of SaaS
+ solutions, or Unix if you rely on Unix systems. Learn more about how 
+you can integrate privileged account security with your most valuable 
+assets.</p>
+
+        <ul>
+          <li>
+            <h2>Virtual and physical servers</h2>
+
+            <p>Privileged accounts present a potential attack path and 
+exist across your systems – including your Windows and Unix servers. 
+Find out about securing this critical part of your network.</p>
+
+            - Case Study – Volkswagen Commercial Vehicles Implements CyberArk to Secure Windows and Unix Servers
+
+          </li>
+
+          <li>
+            <h2>Cloud/IaaS</h2>
+
+            <p>Cloud environments give us more flexibility and computing
+ power than ever before, but they also open up new avenues of attack, 
+including via IaaS and SaaS management and administrator accounts.</p>
+
+            - View White Paper: Securing Privileges in the Cloud
+            - Watch Video: CyberArk: Securing the Cloud Environment
+
+          </li>
+
+          <li>
+            <h2>Unix/SSH keys</h2>
+
+            <p>Unix environments are made up of tens or hundreds of 
+systems accessed by privileged users – an approach that brings with it 
+its own heightened security risks.</p>
+
+            - Explore White Paper: The 10 Pains of Unix Security
+            - Read White Paper: Privileged Account Security: A Balanced Approach to Securing Unix Accounts
+            - View White Paper: Discover the Keys to Securing SSH.
+
+          </li>
+
+          <li>
+            <h2>Databases/business applications/SaaS</h2>
+
+            <p>Business applications and databases store and access 
+critical information, including financial records, intellectual property
+ and personally identifiable information (PII) of employees and 
+customers. Whether on-premises or in the cloud, any compromise can cause
+ real and lasting damage.</p>
+
+            - Download White Paper: Social Media and the Shared Privileged Account
+
+          </li>
+
+          <li>
+            <h2>Workstations</h2>
+
+            <p>If local administrator accounts are poorly managed, the 
+network can become vulnerable to pass-the-hash attacks and other 
+damaging compromises. A balance between security and convenient access 
+is necessary to mitigate the risk.</p>
+
+            - View Solution Brief: Pass-the-Hash
+
+          </li>
+
+          <li>
+            <h2>Security solutions</h2>
+
+            <p>Even the security solutions you deploy to protect your 
+business are controlled by privileged accounts. In the event of 
+compromise, your security solution can actually be turned against you 
+and used to attack – not defend – the enterprise.</p>
+
+            - [content in-progress]
+
+          </li>
+
+          <li>
+            <h2>Network devices</h2>
+
+            <p>Network devices are at the very foundation of your IT 
+infrastructure. But if control of these devices falls into the wrong 
+hands, it can put all your data and operations at risk.</p>
+
+            - View Case Study: Fiducia Secures 1,500 Network Components with CyberArk Privileged Account Security
+
+          </li>
+        </ul>
+
+      </div></div>
+
+      <div style="height: 528px;" class="section it-security_sub-section understanding fp-section fp-table" id="section9"><div class="fp-tableCell" style="height:528px;">
+        <h1>SOLUTION PURCHASING GUIDANCE</h1>
+
+        <p>Selecting a privileged account security solution is a major 
+decision. This solution will defend some of your most valuable assets, 
+so you’ll want to know it is robust and just as sophisticated as today’s
+ cyber criminals. You’ll also need answers to important questions about 
+its compatibility with your systems, suitability for your requirements 
+and ease of management.</p>
+
+        <ul>
+          <li>Preview IDC MarketScape: Worldwide Privileged Access Management 2014 Vendor Assessment</li>
+          <li>Download Buying Guide: Seven Things to Consider when Evaluating Privileged Account Security Solutions</li>
+          <li>View ESG Lab Validation: CyberArk Privileged Account Security Solution</li>
+          <li>Download Nucleus Research: CyberArk ROI Guidebook</li>
+        </ul>
+
+      </div></div>
+      
+      <div style="height: 528px;" class="section it-operations fp-section fp-table" id="section10"><div class="fp-tableCell" style="height:528px;">
+        <h1>IT OPERATIONS</h1>
+
+        <p>Privileged account management is as much an operations as a 
+security issue. Guarding your systems against threat is essential, but 
+this should be balanced with your organization’s demands for system 
+uptime, productivity and access. You also need to be confident that any 
+privileged account security solution will yield strong ROI, both for now
+ and in years to come.</p>
+
+        <p>Choose a topic to learn more.</p>
+
+        <ul>
+          <li>Productivity and privileged account security</li>
+          <li>Efficiency in action</li>
+        </ul>
+      </div></div>
+
+      <div style="height: 528px;" class="section it-operations_sub-section productivity fp-section fp-table" id="section11"><div class="fp-tableCell" style="height:528px;">
+        <h1>PRODUCTIVITY AND PRIVILEGED ACCOUNT SECURITY</h1>
+
+        <p>Productivity is not just a case of making sure your security 
+solution doesn’t hamper your organization. With the right software, you 
+can actually boost productivity in the enterprise. A carefully chosen 
+solution has the potential to allow you to respond to new threats with 
+streamlined investment, provide a central platform for management, 
+automate key tasks and generally make your admin users more productive.</p>
+
+        <ul>
+          <li>- Download Nucleus Research’s CyberArk ROI Guidebook</li>
+        </ul>
+      </div></div>
+
+      <div style="height: 528px;" class="section it-operations_sub-section productivity fp-section fp-table" id="section12"><div class="fp-tableCell" style="height:528px;">
+        <h1>EFFICIENCY IN ACTION</h1>
+
+        <p>In large national and international organizations, privileged
+ account management can have a huge, positive impact on operations. The 
+right solution can drive efficiency in many ways. This varies from 
+organization to organization, but can include centralizing the 
+management of accounts for a global workforce, freeing up staff to work 
+on other critical tasks and accelerating the auditing process.</p>
+
+        <ul>
+          <li>- View Case Study: Finansbank Relies on CyberArk to 
+Automate Manual Tasks that Enable it to Streamline Operations and 
+Streamline its Security Posture</li>
+          <li>- Watch Video: CyberArk’s Integrated Privileged Account Security Solution</li>
+        </ul>
+      </div></div>
+
+      <div style="height: 528px;" class="section audit-compliance fp-section fp-table" id="section13"><div class="fp-tableCell" style="height:528px;">
+        <h1>AUDIT AND COMPLIANCE</h1>
+
+        <p>Today’s industry and government regulations often mean that 
+organizations are expected to be able to secure access to valuable 
+assets and pinpoint who was using a certain privileged account at a 
+certain time. In organizations with shared accounts and vast numbers of 
+workstations, devices and applications, this can be extremely difficult.
+ Fortunately, there are high-performance solutions that automate this, 
+tracking, logging and recording privileged account activity across your 
+network.</p>
+
+        <p>Choose a topic to learn more.</p>
+
+        <ul>
+          <li>- Privileged account security and audit/compliance</li>
+          <li>- Compliance by regulation</li>
+        </ul>     
+      </div></div>
+
+      <div style="height: 528px;" class="section audit-compliance_sub-section priveleged fp-section fp-table" id="section14"><div class="fp-tableCell" style="height:528px;">
+        <h1>PRIVILEGED ACCOUNT SECURITY AND AUDIT/COMPLIANCE</h1>
+
+        <p>Privileged user activity is difficult – if not impossible – 
+to track manually. Automating the tracking, monitoring and recording of 
+privileged activity is critical for meeting internal audit and 
+compliance requirements.</p>
+
+        <ul>
+          <li>- Download White Paper: IDC: Better Approach to Risk 
+Management and Compliance: CyberArk Adds MasterPolicy to its Privileged 
+Account Security</li>
+          <li>- View Case Study: CDW Wins Audit and Security Advantages 
+with the Flexibility of the CyberArk Privileged Account Security 
+Solution</li>
+          <li>- Read White Paper: Isolation, Control and Monitoring in Next Generation Jump Servers</li>
+        </ul>     
+      </div></div>
+
+      <div style="height: 528px;" class="section audit-compliance_sub-section priveleged fp-section fp-table" id="section15"><div class="fp-tableCell" style="height:528px;">
+        <h1>COMPLIANCE BY REGULATION</h1>
+
+        table
+
+        Regulation  Description Find out more
+        ISO Many global organizations incorporate the International 
+Organization for Standardization (ISO) and International 
+Electrotechnical Commission (IEC) 27002 standard as part of their 
+information security program.  View White Paper: Safeguarding Privileged
+ Access Implementing ISO/IEC 27002 Security Controls with CyberArk 
+Solutions
+        PCI Card processing compliance is governed by the Payment Card 
+Industry Data Security Standard (PCI DSS). Download White Paper: 
+Securing Privileged Accounts: Meeting the Payment Card Industry (PCI) 
+Data Security Standard (DSS) 3.0 with CyberArk Solutions
+        Sarbanes-Oxley  A legislative framework for ensuring the 
+integrity and accuracy of public company financial statements. Download 
+White Paper: Protecting Financial Information: Sarbanes-Oxley
+        NIST SP 800-53  Federal agencies are required to comply with the
+ Federal Information Security Management Act (FISMA), with reference to 
+the NIST SP 800-53 recommendations. Read White Paper: NIST SP 800-53 
+Revision 4: Implementing Essential Security Controls with CyberArk 
+Solutions
+        NERC CIP  The North American Electric Reliability Corporation’s 
+(NERC) Critical Infrastructure Protection (CIP) provides requirements 
+for safeguarding utility generation sites.  Read White Paper: Protecting
+ the Grid Addressing – NERC CIP Version 5 Requirements for Securing 
+Privileged Accounts
+        MAS-TRM The Monetary Authority of Singapore’s guidelines for 
+financial institutions confronting technology risk management. Read 
+White Paper: Addressing the Monetary Authority of Singapore (MAS) 
+Technology Risk Management (TRM) Guidelines with CyberArk Solutions
+        US Department of Homeland Security CDM  US Department of 
+Homeland Security guidance covering least-privilege policies and 
+infrastructure integrity as part of the Continuous Diagnostics and 
+Mitigation Program.  Download White Paper: Privileged Account Security 
+in US Federal Agencies
+
+      </div></div>
+
+
+
+
+      <div style="height: 450px;" class="xsbottom" id="xsbottom1"></div>
+      <div style="height: 450px;" class="xsbottom" id="xsbottom2"></div>
+      <div style="height: 450px;" class="xsbottom" id="xsbottom3"></div>
+
+
+
+
+
+
+      <!-- <div class="parallax-container">
+        <img class="bg_img building_main" src="images/bg_buildings.png">
+        <img class="bg_img building_it-security" src="images/bg_buildings_it-security.png">
+      </div> -->
+
+ 
+
+
+      <div class="footer">
+        
+      </div>
+    </div>
+    
+    <!--<script src="scripts/lib/greensock/TweenMax.min.js"></script>-->
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="cyberark_files/jquery_002.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.1/ScrollMagic.js"></script>-->
+    
+    <!-- build:js(.) scripts/plugins.js -->
+    <script src="cyberark_files/affix.js"></script>
+    <script src="cyberark_files/alert.js"></script>
+    <script src="cyberark_files/dropdown.js"></script>
+    <script src="cyberark_files/tooltip.js"></script>
+    <script src="cyberark_files/modal.js"></script>
+    <script src="cyberark_files/transition.js"></script>
+    <script src="cyberark_files/button.js"></script>
+    <script src="cyberark_files/popover.js"></script>
+    <script src="cyberark_files/carousel.js"></script>
+    <script src="cyberark_files/scrollspy.js"></script>
+    <script src="cyberark_files/collapse.js"></script>
+    <script src="cyberark_files/tab.js"></script>
+    <!-- endbuild -->
+    
+    <!--<script src="bower_components/pagepiling.js/jquery.pagepiling.min.js"></script>-->
+
+
+    <script src="cyberark_files/TweenMax.js"></script>
+    <script src="cyberark_files/ScrollMagic.js"></script>
+    <script src="cyberark_files/animation.js"></script>
+    <!--<script src="js/jquery.pagepiling.min.js"></script>-->
+    <script src="cyberark_files/jquery.js"></script>
+    <script src="cyberark_files/debug.js"></script>
+
+    <script src="cyberark_files/common.js"></script>
+    <script src="cyberark_files/animations.js"></script>
+
+    <!-- build:js scripts/main.js -->
+    <script src="cyberark_files/main.js"></script>
+    <!-- endbuild -->
+    
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+  
+
+<div style="margin-top: -53.5px;" class="right" id="fp-nav"><ul><li class=""><a class="" href="#page1"><span></span></a></li><li class=""><a class="" href="#page2"><span></span></a></li><li class=""><a class="" href="#page3"><span></span></a><ul id="ulid2"><li class=""><a class="" href="#page4"><span></span></a></li><li class=""><a class="" href="#page5"><span></span></a></li></ul></li><li class=""><a class="" href="#page6"><span></span></a></li><li class="selected"><a class="active" href="#page7"><span></span></a></li></ul></div><div style="display: none; padding: 15px; font-family: sans-serif; position: fixed; font-size: 0.9em; z-index: 9999; right: 0px; top: 0px; border-bottom-left-radius: 5px; background-color: rgb(27, 32, 50); margin: 0px; color: white; text-align: center;" id="__bs_notify__"></div></body></html>
