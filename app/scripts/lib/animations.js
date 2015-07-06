@@ -112,7 +112,7 @@ $(function () {
 
 
 // trigger on section 8
-    var p7 = TweenMax.to('#it-security', 1, {
+    var p8 = TweenMax.to('#it-security', 1, {
         height: 560, width: 380, opacity: 0.65
     });
 
@@ -124,7 +124,7 @@ $(function () {
 
 
 // trigger on section 9
-    var p7 = TweenMax.to('#it-security', 1, {
+    var p9 = TweenMax.to('#it-security', 1, {
         height: 560, width: 380, opacity: 0.65
     });
 
@@ -136,7 +136,7 @@ $(function () {
 
 
 // trigger on section 10
-    var p7 = TweenMax.to('#it-security', 1, {
+    var p10 = TweenMax.to('#it-security', 1, {
         height: 560, width: 380, opacity: 0.65
     });
 
