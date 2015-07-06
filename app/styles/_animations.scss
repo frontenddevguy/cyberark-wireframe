@@ -116,10 +116,6 @@
     margin :0;
 }
 
-.animations-container {
-    position: relative;
-}
-
 
 #xsbottom-bg {
     background: url('../images/bg_buildings.png') no-repeat 0 0;
@@ -133,19 +129,13 @@
     width: 100%;
 }
 
-.xsbottom {
-    // position: absolute;
-}
-
 #business_leadership {
     background: url('../images/bg_building_business-2.png') no-repeat 0 0;
-    margin-left: 100px;
-    height: 0;
+     height: 0;
 }
 
 #business_leadership2 {
-    background: url('../images/bg_building_business-3a.png') no-repeat 0 0;
-    margin-left: 242px;
+    background: url('../images/bg_building_business-2.png') no-repeat 0 0;
 }
 
 #compliance {
@@ -160,6 +150,10 @@
     background: url('../images/bg_building_it-security-1.png') no-repeat 0 0;
 }
 
+#it-security2 {
+    background: url('../images/bg_building_it-security.png') no-repeat 0 0;
+}
+
 #operations {
     background: url('../images/bg_building_operations.png') no-repeat 0 0;
 }
@@ -167,11 +161,10 @@
 #operations2 {
     background: url('../images/bg_building_operations.png') no-repeat 0 0;
 }
+#myCarouselSec4.carousel{
 
-
-
-
-
-
-
-
+    height: 200px;
+}
+#myCarouselSec4 .fp-tableCell{
+    display:block;
+}
