@@ -102,16 +102,16 @@
     bottom:0;
     margin: 0 auto;
     position:fixed;
-    width:20%;
-    z-index: 100;
+    // width:20%;
+    z-index: 98;
 }
 
-#xsbottom2{
-    right: 0;
-}
-#xsbottom3{
-    right: 50%;
-}
+// #xsbottom2{
+//     right: 0;
+// }
+// #xsbottom3{
+//     right: 50%;
+// }
 .row{
     margin :0;
 }
@@ -122,9 +122,9 @@
 
 
 #xsbottom-bg {
-    background: url('../images/bg_buildings.png') no-repeat 0 0;
-    background-size: cover;
-    border: 1px solid green;
+    background: url('../images/bg_buildings.png') no-repeat;
+    // background-size: cover;
+    // border: 1px solid green;
     height: 186px;
     left: 0;
     margin: 0 auto;
@@ -133,39 +133,46 @@
     width: 100%;
 }
 
-.xsbottom {
-    // position: absolute;
-}
+
 
 #business_leadership {
-    background: url('../images/bg_building_business-2.png') no-repeat 0 0;
-    margin-left: 100px;
-    height: 0;
+    background: url('../images/bg_building_business-2.png');
+    margin-left: 106px;
+    // height: 0;
 }
 
 #business_leadership2 {
-    background: url('../images/bg_building_business-3a.png') no-repeat 0 0;
+    background: url('../images/bg_building_business-3a.png');
     margin-left: 242px;
 }
 
 #compliance {
-    background: url('../images/bg_building_compliance.png') no-repeat 0 0;
+    background: url('../images/bg_buildings_compliance.png') no-repeat 0 0;
 }
 
 #compliance2 {
-    background: url('../images/bg_building_compliance.png') no-repeat 0 0;
+    background: url('../images/bg_buildings_compliance.png') no-repeat 0 0;
 }
 
 #it-security {
-    background: url('../images/bg_building_it-security-1.png') no-repeat 0 0;
+    background: url('../images/bg_buildings_it-security-1.png') no-repeat 0 0;
 }
 
+// #section7 #it-security {
+//     margin-top: -60px;
+// }
+
 #operations {
-    background: url('../images/bg_building_operations.png') no-repeat 0 0;
+    background: url('../images/bg_buildings_operations.png') no-repeat 0 0;
 }
 
 #operations2 {
-    background: url('../images/bg_building_operations.png') no-repeat 0 0;
+    background: url('../images/bg_buildings_operations.png') no-repeat 0 0;
+}
+
+.xsbottom {
+    // position: absolute;
+    background-size: 100% auto!important;
 }
 
 

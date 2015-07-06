@@ -7,14 +7,20 @@ body {
 h1 {
 	font-size: 63px; 
 
-	b {
-		color: $blue;
-		font-weight: normal;
-	}
-
 	.intro & {
 		font-size: 26px;
 	}
+}
+
+h2 {
+	font-size: 24px;
+	font-weight: normal;
+}
+
+b {
+	color: $blue;
+	display: block;
+	font-weight: normal;
 }
 
 p {
