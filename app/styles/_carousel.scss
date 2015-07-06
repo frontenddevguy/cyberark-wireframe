@@ -6,3 +6,21 @@
 #myCarouselSec4 .fp-tableCell{
     display:block;
 }
+
+.carousel-inner .active.left { left: -33%; }
+.carousel-inner .next        { left:  33%; }
+.carousel-inner .prev        { left: -33%; }
+.carousel-control.left,.carousel-control.right {background-image:none;}
+.item:not(.prev) {visibility: visible;}
+.item.right:not(.prev) {visibility: hidden;}
+.rightest{ visibility: visible;}
+
+.carousel-inner {
+	a {
+		display: block;
+		float: left;
+		width: 100px;
+		height: 100px;
+		border: 1px solid red;
+	}
+}

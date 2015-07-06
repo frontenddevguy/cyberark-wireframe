@@ -28,11 +28,14 @@ $(function () {
 // trigger on section 3
     var p3 = TweenMax.to('#business_leadership', 1, {
         // height: '73%', width: 126
-        height: 475, width: 126
+        height: 475, width: 126, left: 106
     });
     var p31 = TweenMax.to('#business_leadership2', 1, {
         // height: '59%', width: 300
-        height: 382, width: 122
+        height: 382, width: 122, left: 244
+    });
+    var p32 = TweenMax.to('#xsbottom-bg', 1, {
+        opacity: 0.25
     });
 
     new ScrollMagic.Scene({
@@ -44,6 +47,11 @@ $(function () {
         triggerElement: '#section3',
         offset: 10
     }).setTween(p31)
+            .addTo(scrollMagicController);
+    new ScrollMagic.Scene({
+        triggerElement: '#section3',
+        offset: 10
+    }).setTween(p32)
             .addTo(scrollMagicController);
 
 
@@ -89,7 +97,7 @@ $(function () {
 
 // trigger on section 6
     var p6 = TweenMax.to('#it-security', 1, {
-        height: 460, width: 338
+        height: 460, width: 338, left: '0'
     });
 
     new ScrollMagic.Scene({
@@ -113,7 +121,7 @@ $(function () {
 
 // trigger on section 8
     var p8 = TweenMax.to('#it-security', 1, {
-        height: 560, width: 380, opacity: 0.65
+        height: '100%', width: 380, opacity: 0.65
     });
 
     new ScrollMagic.Scene({
