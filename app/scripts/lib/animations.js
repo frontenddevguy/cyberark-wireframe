@@ -27,10 +27,10 @@ $(function () {
 
 // trigger on section 3
     var p3 = TweenMax.to('#business_leadership', 1, {
-        height: 471, width: 300
+        height: '73%', width: 300
     });
     var p31 = TweenMax.to('#business_leadership2', 1, {
-        height: 300, width: 300
+        height: '59%', width: 300
     });
 
     new ScrollMagic.Scene({

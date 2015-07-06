@@ -5,8 +5,11 @@ body {
 }
 
 h1 {
+	font-size: 63px; 
+
 	b {
 		color: $blue;
+		font-weight: normal;
 	}
 
 	.intro & {
