@@ -13,7 +13,13 @@ $(function () {
     $('#myCarouselSec4').carousel({
         interval: 40000
     });
+    $('.carousel-control.left').click(function () {
+        $('#myCarouselSec4').carousel('prev');
+    });
 
+    $('.carousel-control.right').click(function () {
+        $('#myCarouselSec4').carousel('next');
+    });
     $('.carousel .item').each(function () {
         var next = $(this).next();
         if (!next.length) {

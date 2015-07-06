@@ -116,10 +116,6 @@
     margin :0;
 }
 
-.animations-container {
-    position: relative;
-}
-
 
 #xsbottom-bg {
     background: url('../images/bg_buildings.png') no-repeat;
@@ -132,6 +128,7 @@
     right: 0;
     width: 100%;
 }
+
 
 
 
@@ -158,9 +155,14 @@
     background: url('../images/bg_buildings_it-security-1.png') no-repeat 0 0;
 }
 
+
 // #section7 #it-security {
 //     margin-top: -60px;
 // }
+
+#it-security2 {
+    background: url('../images/bg_building_it-security.png') no-repeat 0 0;
+}
 
 #operations {
     background: url('../images/bg_buildings_operations.png') no-repeat 0 0;
@@ -174,11 +176,4 @@
     // position: absolute;
     background-size: 100% auto!important;
 }
-
-
-
-
-
-
-
 
