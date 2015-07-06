@@ -1,0 +1,34 @@
+.pp-section {
+	// max-width: 980px;
+
+}
+
+section,
+.pp-section {
+	background-color: $white;
+}
+
+.intro {
+	.container-fluid {
+		background-color: $grey-mid;
+
+		.container {
+			.intro-links {
+				padding: 12px 4px;
+
+				a {
+					background: url('../images/icon_arrow-white.png') no-repeat right 100px;
+					display: block;
+					float: left;
+					margin-right: 10px;
+					min-height: 200px;
+					vertical-align: top;
+
+					img {
+						width: 100%;
+					}
+				}				
+			}
+		}	
+	}
+}
