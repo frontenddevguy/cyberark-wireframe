@@ -37,6 +37,8 @@ $(function () {
         triggerElement: '#section3',
         offset: 10
     }).setTween(p3)
+            .addTo(scrollMagicController);
+    new ScrollMagic.Scene({
         triggerElement: '#section3',
         offset: 10
     }).setTween(p31)
