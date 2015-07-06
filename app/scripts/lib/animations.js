@@ -45,13 +45,22 @@ $(function () {
             .addTo(scrollMagicController);
 
 
-    var p4 = TweenMax.to('#business_leadership', 0.5, {
-        height: 600
+// trigger on section 3
+    var p4 = TweenMax.to('#business_leadership', 1, {
+        height: 0, width: 300
     });
+    var p41 = TweenMax.to('#business_leadership2', 1, {
+        height: 0, width: 300
+    });
+
     new ScrollMagic.Scene({
         triggerElement: '#section4',
         offset: 10
     }).setTween(p4)
             .addTo(scrollMagicController);
-
+    new ScrollMagic.Scene({
+        triggerElement: '#section4',
+        offset: 10
+    }).setTween(p41)
+            .addTo(scrollMagicController);
 });
