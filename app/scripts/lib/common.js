@@ -1,6 +1,5 @@
 $(function () {
 
-
     $('#pagepiling').fullpage({
         fitToSection: true, 'navigation': true,
         'navigationPosition': 'right',
@@ -37,5 +36,6 @@ $(function () {
 
         }
     });
+    $('#myCarouselSec4').addClass("slide");
 
 });
