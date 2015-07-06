@@ -15,19 +15,19 @@ $(function () {
     }).setTween("#leadInfoBanner", 0.6, {rotateY: 360})
             .addTo(scrollMagicController);
 
-    var p1 = TweenMax.to('.xsbottom', 0.5, {
-        height: 150
+    var p1 = TweenMax.to('.xsbottom-bg', 1, {
+        height: 186
     });
 
-    var p2 = TweenMax.to('.xsbottom', 0.5, {
+    var p2 = TweenMax.to('.xsbottom-bg', 1, {
         height: 250
     });
 
-    var p3 = TweenMax.to('.xsbottom', 0.5, {
-        height: 400
+    var p3 = TweenMax.to('#business_leadership', 0.5, {
+        height: 471
     });
 
-    var p4 = TweenMax.to('.xsbottom', 0.5, {
+    var p4 = TweenMax.to('#business_leadership', 0.5, {
         height: 450
     });
 

@@ -100,10 +100,12 @@
 .xsbottom{
     border:1px solid red;
     bottom:0;
+    margin: 0 auto;
     position:fixed;
     width:20%;
     z-index: 100;
 }
+
 #xsbottom2{
     right: 0;
 }
@@ -115,13 +117,21 @@
 }
 
 
-// #xsbottom-bg {
-//     background: url('../images/bg_buildings.png') no-repeat 0 0;
-//     background-size: cover;
-//     border: 1px solid green;
-//     height: 186px;
-//     width: 100%;
-// }
+#xsbottom-bg {
+    background: url('../images/bg_buildings.png') no-repeat 0 0;
+    background-size: cover;
+    border: 1px solid green;
+    height: 186px;
+    left: 0;
+    margin: 0 auto;
+    max-width: 980px;
+    right: 0;
+    width: 100%;
+}
+
+#business_leadership {
+    background: url('../images/bg_building_business-2.png') no-repeat 0 0;
+}
 
 
 

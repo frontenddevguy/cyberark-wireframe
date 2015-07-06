@@ -1,0 +1,32 @@
+
+
+nav.top-menu {
+	position: fixed;
+	right: 30px;
+	top: 30px;
+	z-index: 30;
+
+	a {
+		cursor: pointer;
+		display: block;
+		float: right;
+		margin-left: 20px;	
+		width: 24px;
+		height: 18px;
+
+		// border: 1px solid green;
+
+		// &:hover {
+		// 	border: 2px solid green;
+		// }
+	}
+
+	.social-links {
+		background: url('../images/icon_social-menu.png') no-repeat 0 0;
+		width: 19px;
+	}
+
+	.quick-links {
+		background: url('../images/icon_menu_quick-links.png') no-repeat 0 0;
+	}
+}
