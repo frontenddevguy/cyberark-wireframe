@@ -3,9 +3,9 @@ $(function () {
 
     for (var i = 1; i <= 15; i++) {
         new ScrollMagic.Scene({
-            triggerElement: '#section-' + i,
+            triggerElement: '#section' + i,
             offset: 20
-        }).setTween("#section-" + i, 0.6, {backgroundColor: "transparent", scale: 1, alpha: 1, zIndex: 99})
+        }).setTween("#section" + i, 0.6, {backgroundColor: "transparent", scale: 1, alpha: 1, zIndex: 99})
                 .addTo(scrollMagicController);
     }
 
@@ -32,27 +32,27 @@ $(function () {
     });
 
     new ScrollMagic.Scene({
-        triggerElement: '#section-1',
+        triggerElement: '#section1',
         offset: 10
     }).setTween(p1)
             .addTo(scrollMagicController);
 
     new ScrollMagic.Scene({
-        triggerElement: '#section-2',
+        triggerElement: '#section2',
         offset: 10
     }).setTween(p2)
             .addTo(scrollMagicController);
 
 
     new ScrollMagic.Scene({
-        triggerElement: '#section-3',
+        triggerElement: '#section3',
         offset: 10
     }).setTween(p3)
             .addTo(scrollMagicController);
 
 
     new ScrollMagic.Scene({
-        triggerElement: '#section-4',
+        triggerElement: '#section4',
         offset: 10
     }).setTween(p4)
             .addTo(scrollMagicController);
