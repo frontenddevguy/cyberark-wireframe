@@ -1,5 +1,4 @@
 $(function () {
-
     //First Group
     var scrollMagicController = new ScrollMagic.Controller();
     var scene1 = new ScrollMagic.Scene({
