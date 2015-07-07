@@ -46,25 +46,33 @@ nav.top-menu {
     ul {
     	float: left; 
     	width: 100%; 
-    	list-style: 
-    	none; 
+    	list-style: none; 
     	padding: 0px;
     }
 
     li {
+    	cursor: pointer;
     	line-height: 30px; 
     	padding: 5px; 
     	margin-bottom: 2px; 
     	background: $blue-opaque;
     }
+
+    .submenu { display: none;}
 }
 
 .social-icons{
     ul { float: right; list-style: outside none none; position: fixed; right: 9%; top: 30px;}
-    li{ border-right: 1px solid; color: #000; float: left; padding: 0px 5px;}
+    li { border-right: 1px solid; color: #000; float: left; padding: 0px 5px;}
 }
 
-.social-icons{ul{opacity:0;right:0%;}}
+// .social-icons{ul{opacity:0;right:0%;}}
+
+
+.social-icon-trigger { 
+	float: left;
+}
+
 
 
 // Breadcrumb
@@ -122,6 +130,7 @@ nav.top-menu {
 .fp-slidesNav ul li a span {
 	background: $grey-light;
 }
+
 
 
 

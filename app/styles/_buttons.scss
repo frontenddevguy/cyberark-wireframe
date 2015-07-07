@@ -15,12 +15,21 @@
 
 
 .hotpoint-links {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+
 	li {
+		position: relative;
+		// overflow: hidden;
+		
 		a {
 			display: inline-block;
+			font-size: 13px;
+			line-height: 15px;
 			height: 44px;
 
-			background: url('../images/hotpoint-1.png') no-repeat 0 0;
+			
 			
 
 			// background-image:
@@ -36,32 +45,109 @@
 			}
 		}
 
-		// &:nth-child(even) {
-		// 	@include gradient-horizontal($start-color: $blue, $end-color: $blue-opaque);
-		// }
+		span {
+			display: block;
+			padding: 6px 0 0 16px;
+		}
+
+		&:nth-child(even) span {
+			// @include gradient-horizontal($start-color: $blue, $end-color: $blue-opaque);
+			padding-left: 62px;
+		}
 
 		// &:nth-child(odd) {
 		// 	@include gradient-horizontal($start-color: $blue-opaque, $end-color: $blue);
 		// }
-
 		
 		margin-bottom: 6px;
 
-		
+		// span {
+		// 	background : $blue;
+		// 	border: 1px solid $blue;
+		// 	border-radius: 11px;
+		// 	display: inline-block;
+		// 	height: 11px;
+  //   		margin: -6px 0 0 -6px;
+  //   		width: 11px;
+		// }
+	}
 
-		span {
-			background : $blue;
-			border: 1px solid $blue;
-			border-radius: 11px;
-			display: inline-block;
-			height: 11px;
-    		margin: -6px 0 0 -6px;
-    		width: 11px;
+	.hotpoint-1 a {
+		background: url('../images/hotpoint-1.png') no-repeat 0 0;
+		width: 193px;
+
+		&:hover,
+		&.active {
+			background: url('../images/hotpoint-sel-1.png') no-repeat 0 0;
 		}
 	}
 
-	.hotpoint-1 & {
-		width: 193px;
+	.hotpoint-2 a {
+		background: url('../images/hotpoint-2.png') no-repeat 0 0;
+		width: 183px;
+		// transform: rotate(180deg);
+
+		&:hover,
+		&.active {
+			background: url('../images/hotpoint-sel-2.png') no-repeat 0 0;
+		}
+
+		span {
+			padding-top: 14px;
+		}
 	}
+
+	.hotpoint-3 a {
+		background: url('../images/hotpoint-3.png') no-repeat 0 0;
+		width: 143px;
+
+		&:hover,
+		&.active {
+			background: url('../images/hotpoint-sel-3.png') no-repeat 0 0;
+		}
+	}
+
+	.hotpoint-4 a {
+		background: url('../images/hotpoint-4.png') no-repeat 0 0;
+		width: 233px;
+		// transform: rotate(180deg);
+
+		&:hover {
+			background: url('../images/hotpoint-sel-4.png') no-repeat 0 0;
+		}
+	}
+
+	.hotpoint-5 a {
+		background: url('../images/hotpoint-5.png') no-repeat 0 0;
+		width: 183px;
+
+		&:hover {
+			background: url('../images/hotpoint-sel-5.png') no-repeat 0 0;
+		}
+
+		span {
+			padding-top: 14px;
+		}
+	}
+
+	.hotpoint-6 a {
+		background: url('../images/hotpoint-6.png') no-repeat 0 0;
+		width: 143px;
+		// transform: rotate(180deg);
+
+		&:hover {
+			background: url('../images/hotpoint-sel-6.png') no-repeat 0 0;
+		}
+	}
+
+	.hotpoint-7 a {
+		background: url('../images/hotpoint-7.png') no-repeat 0 0;
+		width: 143px;
+
+		&:hover {
+			background: url('../images/hotpoint-sel-7.png') no-repeat 0 0;
+		}
+	}
+	
 }
 

@@ -41,24 +41,54 @@
 
     <nav class="top-menu">
       <a class="quick-links navbar-toggle" href="#" data-toggle="offcanvas" data-target="#slideNavmenu" data-canvas="body"></a>
-      <a class="social-links social-icons">
-                  <ul>
-            <li>FB</li>
-            <li>Twitter</li>
-            <li>Google+</li>
-            <li>LinkedIn</li>
-        </ul>
-      </a>
+      <div class="social-icon-trigger">
+        <a class="social-links"></a>
+          <span class="social-icons">
+            <ul>
+              <li>FB</li>
+              <li>Twitter</li>
+              <li>Google+</li>
+              <li>LinkedIn</li>
+            </ul>
+          </span>
+      </div>
     </nav>
 
     <nav id="slideNavmenu" class="navmenu navmenu-default navmenu-fixed-right offcanvas" role="navigation">
+
       <h3>Quick Links</h3>
-      <ul>
-        <li><a href="#">Business Leadership</a></li>
-        <li><a href="#">IT Security</a></li>
-        <li><a href="#">IT Operations</a></li>
-        <li><a href="#">Audit and Compliance</a></li>
-      </ul>
+
+        <ul>
+            <li onclick="$('#slideNavmenu').offcanvas('toggle')"><a>Close</a></li>
+            <li class="top-level"><a href="#">Business Leadership</a>
+                <ul class="submenu">
+                    <li><a>Submenu1</a></li>
+                    <li><a>Submenu2</a></li>
+                    <li><a>Submenu3</a></li>
+                </ul>
+            </li>
+            <li class="top-level"><a href="#">IT Security</a>
+                <ul class="submenu">
+                    <li><a>Submenu1</a></li>
+                    <li><a>Submenu2</a></li>
+                    <li><a>Submenu3</a></li>
+                </ul>
+            </li>
+            <li class="top-level"><a href="#">IT Operations</a>
+                <ul class="submenu">
+                    <li><a>Submenu1</a></li>
+                    <li><a>Submenu2</a></li>
+                    <li><a>Submenu3</a></li>
+                </ul>
+            </li>
+            <li class="top-level"><a href="#">Audit and Compliance</a>
+                <ul class="submenu">
+                    <li><a>Submenu1</a></li>
+                    <li><a>Submenu2</a></li>
+                    <li><a>Submenu3</a></li>
+                </ul>
+            </li>
+        </ul>
     </nav>
 
 
@@ -313,14 +343,14 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-10 col-md-3 col-md-offset-1">
-              <ul class="hotpoint-links list-unstyled">
-                <li class="hotpoint-1"><a href="">Virtual and <br>physical servers</a><span></span></li>
-                <li class="hotpoint-2"><a href="">Cloud/IaaS</a><span></span></li>
-                <li class="hotpoint-3"><a href="">Unix/<br>SSH keys</a><span></span></li>
-                <li class="hotpoint-4">Databases/business <br>applications/SaaS<span></span></li>
-                <li class="hotpoint-5">Workstations<span></span></li>
-                <li class="hotpoint-6">Security <br>solutions<span></span></li>
-                <li class="hotpoint-7">Network <br>devices<span></span></li>
+              <ul id="tabs" class="nav nav-tabs hotpoint-links list-unstyled" data-tabs="tabs">
+                <li class="hotpoint-1"><a href="#hotpoint-content-1" data-toggle="tab" class="active"><span>Virtual and <br>physical servers</span></a></li>
+                <li class="hotpoint-2"><a href="#hotpoint-content-2" data-toggle="tab"><span>Cloud/IaaS</span></a></li>
+                <li class="hotpoint-3"><a href="#hotpoint-content-3" data-toggle="tab"><span>Unix/<br>SSH keys</span></a></li>
+                <li class="hotpoint-4"><a href="#hotpoint-content-4" data-toggle="tab"><span>Databases/business <br>applications/SaaS</span></a></li>
+                <li class="hotpoint-5"><a href="#hotpoint-content-5" data-toggle="tab"><span>Workstations</span></a></li>
+                <li class="hotpoint-6"><a href="#hotpoint-content-6" data-toggle="tab"><span>Security <br>solutions</span></a></li>
+                <li class="hotpoint-7"><a href="#hotpoint-content-7" data-toggle="tab"><span>Network <br>devices</span></a></li>
               </ul>
             </div>
 
@@ -329,17 +359,17 @@
 
               <p>An effective privileged account security strategy demands integration with all systems and applications in your environment. This might be cloud if your business relies on IaaS or involves a lot of SaaS solutions, or Unix if you rely on Unix systems. Learn more about how you can integrate privileged account security with your most valuable assets.</p>
 
-              <ul class="hotpoint-content">
-                <li class="virtual">
+              <div id="my-tab-content" class="tab-content hotpoint-content list-unstyled">
+                <div id="hotpoint-content-1" class="virtual tab-pane active">
                   <h2>Virtual and physical servers</h2>
 
                   <p>Privileged accounts present a potential attack path and exist across your systems – including your Windows and Unix servers. Find out about securing this critical part of your network.</p>
 
                   - Case Study – Volkswagen Commercial Vehicles Implements CyberArk to Secure Windows and Unix Servers
 
-                </li>
+                </div>
 
-                <li class="cloud">
+                <div id="hotpoint-content-2" class="cloud tab-pane">
                   <h2>Cloud/IaaS</h2>
 
                   <p>Cloud environments give us more flexibility and computing power than ever before, but they also open up new avenues of attack, including via IaaS and SaaS management and administrator accounts.</p>
@@ -347,9 +377,9 @@
                   - View White Paper: Securing Privileges in the Cloud
                   - Watch Video: CyberArk: Securing the Cloud Environment
 
-                </li>
+                </div>
 
-                <li class="unix">
+                <div id="hotpoint-content-3" class="unix tab-pane">
                   <h2>Unix/SSH keys</h2>
 
                   <p>Unix environments are made up of tens or hundreds of systems accessed by privileged users – an approach that brings with it its own heightened security risks.</p>
@@ -358,44 +388,45 @@
                   - Read White Paper: Privileged Account Security: A Balanced Approach to Securing Unix Accounts
                   - View White Paper: Discover the Keys to Securing SSH.
 
-                </li>
+                </div>
 
-                <li class="databases">
-                  <h2>Databases/business applications/SaaS</h2>
+                <div id="hotpoint-content-4" class="databases tab-pane">
+                  <h2>Databases/business appdivcations/SaaS</h2>
 
-                  <p>Business applications and databases store and access critical information, including financial records, intellectual property and personally identifiable information (PII) of employees and customers. Whether on-premises or in the cloud, any compromise can cause real and lasting damage.</p>
+                  <p>Business appdivcations and databases store and access critical information, including financial records, intellectual property and personally identifiable information (PII) of employees and customers. Whether on-premises or in the cloud, any compromise can cause real and lasting damage.</p>
 
                   - Download White Paper: Social Media and the Shared Privileged Account
 
-                </li>
+                </div>
 
-                <li class="workstations">
+                <div id="hotpoint-content-5" class="workstations tab-pane">
                   <h2>Workstations</h2>
 
                   <p>If local administrator accounts are poorly managed, the network can become vulnerable to pass-the-hash attacks and other damaging compromises. A balance between security and convenient access is necessary to mitigate the risk.</p>
 
                   - View Solution Brief: Pass-the-Hash
 
-                </li>
+                </div>
 
-                <li class="security">
+                <div id="hotpoint-content-6" class="security tab-pane">
                   <h2>Security solutions</h2>
 
                   <p>Even the security solutions you deploy to protect your business are controlled by privileged accounts. In the event of compromise, your security solution can actually be turned against you and used to attack – not defend – the enterprise.</p>
 
                   - [content in-progress]
 
-                </li>
+                </div>
 
-                <li class="network">
+                <div id="hotpoint-content-7" class="network tab-pane">
                   <h2>Network devices</h2>
 
                   <p>Network devices are at the very foundation of your IT infrastructure. But if control of these devices falls into the wrong hands, it can put all your data and operations at risk.</p>
 
                   - View Case Study: Fiducia Secures 1,500 Network Components with CyberArk Privileged Account Security
 
-                </li>
-              </ul>
+                </div>
+                
+              </div>
             </div>
           </div>
 
