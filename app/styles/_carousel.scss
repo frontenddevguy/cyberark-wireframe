@@ -1,10 +1,41 @@
 
-#myCarouselSec4.carousel{
+// #myCarouselSec4.carousel{
 
-    height: 200px;
+//     height: 200px;
+// }
+// #myCarouselSec4 .fp-tableCell{
+//     display:block;
+// }
+
+// .carousel-inner .active.left { left: -33%; }
+// .carousel-inner .next        { left:  33%; }
+// .carousel-inner .prev        { left: -33%; }
+// .carousel-control.left,.carousel-control.right {background-image:none;}
+// .item:not(.prev) {visibility: visible;}
+// .item.right:not(.prev) {visibility: hidden;}
+// .rightest{ visibility: visible;}
+
+
+
+
+
+#myCarouselSec4.carousel {
+	border: 1px solid red;
+	bottom: 71px;
+    height: 110px;
+    margin-left: -12px;
+    overflow: hidden;
+    position: absolute;
+    width: 980px;
 }
 #myCarouselSec4 .fp-tableCell{
     display:block;
+}
+
+.carousel-inner {
+	background-color: #5d5d60;
+	margin-left: 126px;
+	opacity: 0.8;
 }
 
 .carousel-inner .active.left { left: -33%; }
@@ -17,10 +48,26 @@
 
 .carousel-inner {
 	a {
+		// background-color: $white;
 		display: block;
 		float: left;
-		width: 100px;
+		width: 269px;
 		height: 100px;
 		border: 1px solid red;
 	}
+
+	.item {
+		border-left: 1px solid $white;
+		padding: 15px;
+		height: 80px;
+	}
+}
+
+.carousel .h3-more {
+	background: url('../images/icon_green-block.png');
+	display: block;
+	height: 127px;
+	margin: 0;
+	position: absolute;
+	width: 114px;
 }
