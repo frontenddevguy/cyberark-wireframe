@@ -41,21 +41,43 @@
 
     <nav class="top-menu">
       <a class="quick-links navbar-toggle" href="#" data-toggle="offcanvas" data-target="#slideNavmenu" data-canvas="body"></a>
-      <a class="social-links social-icons">
-                  <ul>
-            <li>FB</li>
-            <li>Twitter</li>
-            <li>Google+</li>
-            <li>LinkedIn</li>
-        </ul>
-      </a>
+      <div class="social-icon-trigger">
+        <a class="social-links"></a>
+            <span class="social-icons">
+              <ul>
+                  <li>FB</li>
+                  <li>Twitter</li>
+                  <li>Google+</li>
+                  <li>LinkedIn</li>
+              </ul>
+            </span>
+      </div>
     </nav>
 
     <nav id="slideNavmenu" class="navmenu navmenu-default navmenu-fixed-right offcanvas" role="navigation">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Contact us</a></li>
-            <li><a href="#">About us</a></li>
+            <li onclick="$('#slideNavmenu').offcanvas('toggle')"><a>Close</a></li>
+            <li class="top-level"><a href="#">Top Level - I</a>
+                <ul class="submenu">
+                    <li><a>Submenu1</a></li>
+                    <li><a>Submenu2</a></li>
+                    <li><a>Submenu3</a></li>
+                </ul>
+            </li>
+            <li class="top-level"><a href="#">Top Level - II</a>
+                <ul class="submenu">
+                    <li><a>Submenu1</a></li>
+                    <li><a>Submenu2</a></li>
+                    <li><a>Submenu3</a></li>
+                </ul>
+            </li>
+            <li class="top-level"><a href="#">Top Level -III</a>
+                <ul class="submenu">
+                    <li><a>Submenu1</a></li>
+                    <li><a>Submenu2</a></li>
+                    <li><a>Submenu3</a></li>
+                </ul>
+            </li>
         </ul>
     </nav>
 

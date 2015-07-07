@@ -97,12 +97,13 @@ nav.top-menu {
 #slideNavmenu{
     a{color: #FFF;}
     ul{float: left; width: 100%; list-style: none; padding: 0px;}
-    li{line-height: 30px; padding: 5px; margin-bottom: 2px; background: #6792B8;}
+    li{line-height: 30px; padding: 5px; margin-bottom: 2px; background: #6792B8; cursor: pointer;}
+    .submenu{ display: none;}
 }
 .social-icons{
-    ul { float: right; list-style: outside none none; position: relative; right: 35px; top: 0px;opacity:0;}
+    ul { float: right; list-style: none; position: relative; top: 0px; opacity: 0; right: -10%; }
     li{ border-right: 1px solid; color: #000; float: left; padding: 0px 5px;}
 }
-
+.social-icon-trigger{float: left;}
 
 

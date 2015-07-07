@@ -38,13 +38,19 @@ $(function () {
     });
     $('#myCarouselSec4').addClass("slide");
 
-        $(".social-links ").mouseover(function(){
-            $(this).css("width", "auto");
-            $(".social-icons ul").stop().animate({'right': '10%','opacity':'1'}, 500);
+        $(".social-icon-trigger").mouseover(function(){
+            $(".social-icons ul").stop().animate({'right': '0%','opacity': '1'}, 500);
+//            $(".social-icons ul").show();
         });
 
-        $(".social-links").mouseout(function(){
-            $(this).css("width", "20px");
-            $(".social-icons ul").stop().animate({'right': '0%','opacity':'0'}, 500);
+        $(".social-icon-trigger").mouseout(function(){
+            $(".social-icons ul").stop().animate({'right': '-10%', 'opacity': '0'}, 500, function() {
+//                $(".social-icons ul").hide();
+            });
+
         });
+
+        $(".top-level").click(function(){
+            $(this).children(".submenu").slideToggle();
+        })
 });
