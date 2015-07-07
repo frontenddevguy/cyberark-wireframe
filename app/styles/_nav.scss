@@ -19,7 +19,10 @@ nav.top-menu {
 
 	.social-links {
 		background: url('../images/icon_social-menu.png') no-repeat 0 0;
-		width: 19px;
+                background-position: right;
+		width: 20px;
+		height: 20px;
+		overflow: hidden;
 	}
 
 	.quick-links {
@@ -119,7 +122,6 @@ nav.top-menu {
 .fp-slidesNav ul li a span {
 	background: $grey-light;
 }
-
 
 
 

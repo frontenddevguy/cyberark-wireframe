@@ -12,3 +12,56 @@
 		width: 117px;
 	}
 }
+
+
+.hotpoint-links {
+	li {
+		a {
+			display: inline-block;
+			height: 44px;
+
+			background: url('../images/hotpoint-1.png') no-repeat 0 0;
+			
+
+			// background-image:
+			// radial-gradient(circle at 0 0, rgba(204,0,0,0) 14px, #c00 15px),
+			// radial-gradient(circle at 100% 0, rgba(204,0,0,0) 14px, #c00 15px),
+			// radial-gradient(circle at 100% 100%, rgba(204,0,0,0) 14px, #c00 15px),
+			// radial-gradient(circle at 0 100%, rgba(204,0,0,0) 14px, #c00 15px);
+
+			
+
+			&:hover {
+				// border: 10px solid green;
+			}
+		}
+
+		// &:nth-child(even) {
+		// 	@include gradient-horizontal($start-color: $blue, $end-color: $blue-opaque);
+		// }
+
+		// &:nth-child(odd) {
+		// 	@include gradient-horizontal($start-color: $blue-opaque, $end-color: $blue);
+		// }
+
+		
+		margin-bottom: 6px;
+
+		
+
+		span {
+			background : $blue;
+			border: 1px solid $blue;
+			border-radius: 11px;
+			display: inline-block;
+			height: 11px;
+    		margin: -6px 0 0 -6px;
+    		width: 11px;
+		}
+	}
+
+	.hotpoint-1 & {
+		width: 193px;
+	}
+}
+
