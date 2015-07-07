@@ -25,7 +25,10 @@ nav.top-menu {
 
 	.social-links {
 		background: url('../images/icon_social-menu.png') no-repeat 0 0;
-		width: 19px;
+                background-position: right;
+		width: 20px;
+		height: 20px;
+		overflow: hidden;
 	}
 
 	.quick-links {
@@ -97,10 +100,9 @@ nav.top-menu {
     li{line-height: 30px; padding: 5px; margin-bottom: 2px; background: #6792B8;}
 }
 .social-icons{
-    ul { float: right; list-style: outside none none; position: fixed; right: 9%; top: 30px;}
+    ul { float: right; list-style: outside none none; position: relative; right: 35px; top: 0px;opacity:0;}
     li{ border-right: 1px solid; color: #000; float: left; padding: 0px 5px;}
 }
-.social-icons{ul{opacity:0;right:0%;}}
 
 
 

@@ -38,11 +38,13 @@ $(function () {
     });
     $('#myCarouselSec4').addClass("slide");
 
-        $(".social-links ,.social-icons ul").mouseover(function(){
+        $(".social-links ").mouseover(function(){
+            $(this).css("width", "auto");
             $(".social-icons ul").stop().animate({'right': '10%','opacity':'1'}, 500);
         });
 
-        $(".social-links,.social-icons ul").mouseout(function(){
+        $(".social-links").mouseout(function(){
+            $(this).css("width", "20px");
             $(".social-icons ul").stop().animate({'right': '0%','opacity':'0'}, 500);
         });
 });
