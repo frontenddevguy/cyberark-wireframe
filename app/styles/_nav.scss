@@ -13,13 +13,7 @@ nav.top-menu {
 		margin-left: 20px;
 		width: 24px;
 		height: 18px;
-                margin-top: 0px;
-
-		// border: 1px solid green;
-
-		// &:hover {
-		// 	border: 2px solid green;
-		// }
+        margin-top: 0px;
 	}
 
 
@@ -32,6 +26,42 @@ nav.top-menu {
 		background: url('../images/icon_menu_quick-links.png') no-repeat 0 0;
 	}
 }
+
+// Quick Links
+
+#slideNavmenu{
+	h3 {
+		background-color: $blue;
+		color: $white
+	}
+
+    a {
+    	color: $white;
+    	text-transform: uppercase;
+    }
+
+    ul {
+    	float: left; 
+    	width: 100%; 
+    	list-style: 
+    	none; 
+    	padding: 0px;
+    }
+
+    li {
+    	line-height: 30px; 
+    	padding: 5px; 
+    	margin-bottom: 2px; 
+    	background: $blue-opaque;
+    }
+}
+
+.social-icons{
+    ul { float: right; list-style: outside none none; position: fixed; right: 9%; top: 30px;}
+    li{ border-right: 1px solid; color: #000; float: left; padding: 0px 5px;}
+}
+
+.social-icons{ul{opacity:0;right:0%;}}
 
 
 // Breadcrumb
@@ -75,8 +105,6 @@ nav.top-menu {
     width: 11px;
 }
 
-
-
 #fp-nav ul li.selected li > a span {
 	height: 4px;
     margin: -2px 0 0 -2px;
@@ -91,16 +119,7 @@ nav.top-menu {
 .fp-slidesNav ul li a span {
 	background: $grey-light;
 }
-#slideNavmenu{
-    a{color: #FFF;}
-    ul{float: left; width: 100%; list-style: none; padding: 0px;}
-    li{line-height: 30px; padding: 5px; margin-bottom: 2px; background: #6792B8;}
-}
-.social-icons{
-    ul { float: right; list-style: outside none none; position: fixed; right: 9%; top: 30px;}
-    li{ border-right: 1px solid; color: #000; float: left; padding: 0px 5px;}
-}
-.social-icons{ul{opacity:0;right:0%;}}
+
 
 
 

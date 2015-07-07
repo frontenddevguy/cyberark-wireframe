@@ -34,23 +34,25 @@ section,
 	.container-fluid {
 		background-color: $grey-mid;
 
+		&.intro-links {
+			margin-top: 40px;
+			padding: 12px 4px;
+		}
+
 		.container {
-			.intro-links {
-				padding: 12px 4px;
 
-				a {
-					background: url('../images/icon_arrow-white.png') no-repeat right 100px;
-					display: block;
-					float: left;
-					margin-right: 10px;
-					min-height: 200px;
-					vertical-align: top;
+			a {
+				background: url('../images/icon_arrow-white.png') no-repeat right 100px;
+				display: block;
+				float: left;
+				margin-right: 10px;
+				min-height: 126px;
+				vertical-align: top;
 
-					img {
-						width: 100%;
-					}
-				}				
-			}
+				img {
+					width: 100%;
+				}
+			}				
 		}	
 	}
 }
