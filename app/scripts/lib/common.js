@@ -38,4 +38,11 @@ $(function () {
     });
     $('#myCarouselSec4').addClass("slide");
 
+        $(".social-links ,.social-icons ul").mouseover(function(){
+            $(".social-icons ul").stop().animate({'right': '10%','opacity':'1'}, 500);
+        });
+
+        $(".social-links,.social-icons ul").mouseout(function(){
+            $(".social-icons ul").stop().animate({'right': '0%','opacity':'0'}, 500);
+        });
 });
