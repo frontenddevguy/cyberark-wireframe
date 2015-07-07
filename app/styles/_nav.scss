@@ -30,3 +30,65 @@ nav.top-menu {
 		background: url('../images/icon_menu_quick-links.png') no-repeat 0 0;
 	}
 }
+
+
+// Breadcrumb 
+
+#fp-nav ul li, .fp-slidesNav ul li{
+    margin : 9px 0px;
+    min-height: 13px;
+    height: auto;
+}
+#fp-nav ul li a, .fp-slidesNav ul li a{
+    min-height: 13px;
+    height: auto;
+}
+
+#fp-nav ul li ul li a span, 
+.fp-slidesNav ul li ul li a span,
+#fp-nav ul li.selected > a span {
+    background : $blue;
+}
+
+#fp-nav ul li.selected .selected .active {
+	border: 1px solid $blue;
+	border-radius: 11px;
+}
+
+#fp-nav{
+    z-index: 99999;
+}
+#fp-nav ul li ul{
+    display :none;
+}
+
+#fp-nav ul li.selected ul{
+    display :block;
+}
+
+#fp-nav ul li a span, 
+.fp-slidesNav ul li a span {
+    height: 11px;
+    margin: -6px 0 0 -6px;
+    width: 11px;
+}
+
+
+
+#fp-nav ul li.selected li > a span {
+	height: 4px;
+    margin: -2px 0 0 -2px;
+    width: 4px;
+}
+
+#fp-nav ul li.selected li {
+	margin: 5px 0;
+}
+
+#fp-nav ul li a span, 
+.fp-slidesNav ul li a span {
+	background: $grey-light;
+}
+
+
+

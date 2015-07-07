@@ -1,33 +1,4 @@
-/*common*/
-#fp-nav ul li, .fp-slidesNav ul li{
-    margin : 7px 0px;
-    min-height: 13px;
-    height: auto;
-}
-#fp-nav ul li a, .fp-slidesNav ul li a{
-    min-height: 13px;
-    height: auto;
-}
 
-#fp-nav ul li ul li a span, .fp-slidesNav ul li ul li a span{
-    background : red;
-
-}
-#fp-nav{
-    z-index: 99999;
-}
-#fp-nav ul li ul{
-    display :none;
-}
-
-#fp-nav ul li.selected ul{
-    display :block;
-}
-#fp-nav ul li.selected > a span:first-child {
-    height: 12px;
-    margin: -6px 0 0 -6px;
-    width: 12px;
-}
 
 
 //////////////////
