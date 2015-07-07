@@ -12,6 +12,7 @@
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/jasny-bootstrap/dist/css/jasny-bootstrap.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -39,13 +40,25 @@
 
 
     <nav class="top-menu">
-
-      <a class="quick-links"></a>
+      <a class="quick-links navbar-toggle" href="#" data-toggle="offcanvas" data-target="#slideNavmenu" data-canvas="body"></a>
       <a class="social-links"></a>
     </nav>
 
-
-
+    <nav id="slideNavmenu" class="navmenu navmenu-default navmenu-fixed-right offcanvas" role="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">About us</a></li>
+        </ul>
+    </nav>
+    <div class="social-icons">
+        <ul>
+            <li>FB</li>
+            <li>Twitter</li>
+            <li>Google+</li>
+            <li>LinkedIn</li>
+        </ul>
+    </div>
     <div class="containerwrap" id="pagepiling">
 
       <div class="section landing" id="section1">
@@ -170,34 +183,34 @@
 
               <ul class="carousel-inner">
 
-                <li class="item active col-lg-3 col-md-4 col-sm-8"> 
+                <li class="item active col-lg-3 col-md-4 col-sm-8">
                   <a href="#">
                     Read the CyberSheath Report: The Role of Privileged Accounts in High-Profile Breaches
                   </a>
                 </li>
-                <li class="item col-lg-3 col-md-4 col-sm-8"> 
+                <li class="item col-lg-3 col-md-4 col-sm-8">
                   <a href="#">
                     Download the Three Phases of Securing Privileged Accounts: A Best Practices Guide
                   </a>
                 </li>
-                <li class="item col-lg-3 col-md-4 col-sm-8"> 
+                <li class="item col-lg-3 col-md-4 col-sm-8">
                   <a href="#">
                     Watch the Video: An Integrated Privileged Account Security Solution
                   </a>
                 </li>
-                <li class="item col-lg-3 col-md-4 col-sm-8"> 
+                <li class="item col-lg-3 col-md-4 col-sm-8">
                   <a href="#">2</a>
                 </li>
-                <li class="item col-lg-3 col-md-4 col-sm-8"> 
+                <li class="item col-lg-3 col-md-4 col-sm-8">
                   <a href="#">2</a>
                 </li>
-                <li class="item col-lg-3 col-md-4 col-sm-8"> 
+                <li class="item col-lg-3 col-md-4 col-sm-8">
                   <a href="#">2</a>
                 </li>
-                <li class="item col-lg-3 col-md-4 col-sm-8"> 
+                <li class="item col-lg-3 col-md-4 col-sm-8">
                   <a href="#">2</a>
                 </li>
-                <li class="item col-lg-3 col-md-4 col-sm-8"> 
+                <li class="item col-lg-3 col-md-4 col-sm-8">
                   <a href="#">2</a>
                 </li>
               </ul>
@@ -207,7 +220,7 @@
             </div>
           </div>
         </div>
-        
+
 
 
       </div>
@@ -236,8 +249,8 @@
             <div class="container">
               <div><a href="#"></a></div>
             </div>
-          </footer> 
-        </div>       
+          </footer>
+        </div>
       </div>
 
 
@@ -265,8 +278,8 @@
             <div class="container">
               <div><a href="#"></a></div>
             </div>
-          </footer>     
-        </div>   
+          </footer>
+        </div>
       </div>
 
       <div class="section it-security_sub-section understanding" id="section7">
@@ -289,8 +302,8 @@
             <div class="container">
               <div><a href="#"></a></div>
             </div>
-          </footer>  
-        </div>      
+          </footer>
+        </div>
       </div>
 
       <div class="section it-security_sub-section protecting" id="section8">
@@ -381,8 +394,8 @@
             <div class="container">
               <div><a href="#"></a></div>
             </div>
-          </footer>    
-        </div>    
+          </footer>
+        </div>
       </div>
 
       <div class="section it-security_sub-section understanding" id="section9">
@@ -436,8 +449,8 @@
             <div class="container">
               <div><a href="#"></a></div>
             </div>
-          </footer>  
-        </div>      
+          </footer>
+        </div>
       </div>
 
       <div class="section it-operations_sub-section productivity" id="section11">
@@ -458,8 +471,8 @@
             <div class="container">
               <div><a href="#"></a></div>
             </div>
-          </footer>     
-        </div>   
+          </footer>
+        </div>
       </div>
 
       <div class="section it-operations_sub-section productivity" id="section12">
@@ -485,8 +498,8 @@
             <div class="container">
               <div><a href="#"></a></div>
             </div>
-          </footer>    
-        </div>    
+          </footer>
+        </div>
       </div>
 
       <div class="section audit-compliance" id="section13">
@@ -510,8 +523,8 @@
             <div class="container">
               <div><a href="#"></a></div>
             </div>
-          </footer>     
-        </div>   
+          </footer>
+        </div>
       </div>
 
       <div class="section audit-compliance_sub-section priveleged" id="section14">
@@ -534,8 +547,8 @@
             <div class="container">
               <div><a href="#"></a></div>
             </div>
-          </footer>     
-        </div>   
+          </footer>
+        </div>
       </div>
 
       <div class="section audit-compliance_sub-section priveleged" id="section15">
@@ -567,8 +580,8 @@
             <div class="container">
               <div><a href="#"></a></div>
             </div>
-          </footer>     
-        </div>   
+          </footer>
+        </div>
       </div>
 
 
@@ -638,6 +651,7 @@
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+    <script src="/bower_components/jasny-bootstrap/dist/js/jasny-bootstrap.min.js"></script>
     <!-- endbuild -->
 
 
