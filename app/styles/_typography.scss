@@ -6,6 +6,7 @@ body {
 
 h1 {
 	font-size: 63px; 
+	font-weight: bold;
 
 	.intro & {
 		font-size: 26px;
@@ -19,11 +20,12 @@ h1 {
 h2 {
 	font-size: 24px;
 	font-weight: normal;
+	line-height: 30px;
 }
 
 b {
 	color: $blue;
-	display: block;
+	// display: block;
 	font-weight: normal;
 }
 
