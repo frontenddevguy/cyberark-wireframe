@@ -23,6 +23,34 @@
 	@include gradient-vertical($start-color: rgba(255,255,255,.0), $end-color: rgba(160,183,202,.5));
 }
 
+.bars-left,
+.bars-right {
+	background: url('../images/bg-moving_lines.png') no-repeat 0 0;
+	height: 289px;
+	position: fixed;
+	width: 79px;
+}
+
+.bars-left {
+	bottom: 0;
+	left: 30px;
+}
+
+.bars-right {
+	background: url('../images/bg-moving_lines.png') no-repeat 0 0;
+	top: 0;
+	right: 30px;
+	transform: rotate(180deg);
+}
+
+.rain-left {
+
+}
+
+.rain-right {
+	
+}
+
 
 
 section,
@@ -54,6 +82,12 @@ section,
 				}
 			}				
 		}	
+	}
+}
+
+#section11 {
+	p {
+		padding-right: 110px;
 	}
 }
 

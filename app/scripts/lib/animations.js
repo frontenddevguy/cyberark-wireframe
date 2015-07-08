@@ -145,15 +145,15 @@ $(function () {
 
 // trigger on section 10
     var p10 = TweenMax.to('#it-operations', 1, {
-        height: 360, width: 117, left: 568, opacity: 0.65
+        height: 360, width: 117, right: '30%', opacity: 0.65
     });
 
     var p101 = TweenMax.to('#it-operations2', 1, {
-        height: 509, width: 140, left: 690, opacity: 1
+        height: 509, width: 140, right: '15%', opacity: 1
     });
 
     var p102 = TweenMax.to('#it-operations3', 1, {
-        height: 255, width: 100, right: 36, opacity: 0.65
+        height: 255, width: 100, right: '4%', opacity: 0.65
     });
 
     new ScrollMagic.Scene({
@@ -172,6 +172,38 @@ $(function () {
         triggerElement: '#section10',
         offset: 10
     }).setTween(p102)
+            .addTo(scrollMagicController);
+
+
+// trigger on section 11
+    var p11 = TweenMax.to('#it-operations', 1, {
+        height: 440, width: 140, right: '34%', opacity: 0.65
+    });
+
+    var p111 = TweenMax.to('#it-operations2', 1, {
+        height: 624, width: 170, right: '16%', opacity: 1
+    });
+
+    var p112 = TweenMax.to('#it-operations3', 1, {
+        height: 316, width: 120, right: '2%', opacity: 0.65
+    });
+
+    new ScrollMagic.Scene({
+        triggerElement: '#section11',
+        offset: 10
+    }).setTween(p11)
+            .addTo(scrollMagicController);
+
+    new ScrollMagic.Scene({
+        triggerElement: '#section11',
+        offset: 10
+    }).setTween(p111)
+            .addTo(scrollMagicController);
+
+    new ScrollMagic.Scene({
+        triggerElement: '#section11',
+        offset: 10
+    }).setTween(p112)
             .addTo(scrollMagicController);
 
 

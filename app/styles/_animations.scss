@@ -77,7 +77,7 @@
 // }
 
 .animations-container {
-    border: 1px solid red;
+    // border: 1px solid red;
     bottom: 0;
     left: 0;
     max-width: 980px;
@@ -88,9 +88,9 @@
     // width: 100%;
 }
 
-.animations-container > div {
-    display: inline-block;
-}
+// .animations-container > div {
+//     display: inline-block;
+// }
 
 
 #xsbottom-bg {
@@ -112,14 +112,14 @@
     position: absolute;
     // background-size: 100% auto!important;
     // height: 100px!important;
-    border: 1px solid orange;
+    // border: 1px solid orange;
     bottom: 0;
     width: auto;
 
     img {
         bottom: 0;
         // height: 100%;
-        left: 0;
+        // left: 0;
         position: absolute;
         vertical-align: bottom;
         width: 100%;
@@ -154,7 +154,7 @@
 }
 
 #it-operations {
-    left: 26px;
+    right: 26px;
     height: 180px;
     width: 50px;
     
@@ -164,7 +164,7 @@
 }
 
 #it-operations2 {
-    left: 26px;
+    right: 26px;
     height: 180px;
     width: 50px;
     
@@ -174,7 +174,7 @@
 }
 
 #it-operations3 {
-    left: 26px;
+    right: 26px;
     height: 180px;
     width: 50px;
     
