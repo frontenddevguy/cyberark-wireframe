@@ -20,13 +20,14 @@
 
 
 #myCarouselSec4.carousel {
-	border: 1px solid red;
-	bottom: 71px;
-    height: 110px;
+border: 1px solid red;
+    float: left;
+    height: 117px;
     margin-left: -12px;
-    overflow: hidden;
-    position: absolute;
     max-width: 980px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
 }
 #myCarouselSec4 .fp-tableCell{
     display:block;
@@ -34,24 +35,28 @@
 
 .carousel-inner {
 	background-color: #5d5d60;
-	margin-left: 126px;
+	/*margin-left: 126px;*/
 	opacity: 0.8;
+        width:90%;
 }
 
 .carousel-inner .active.left { left: -33%; }
-.carousel-inner .next        { left:  33%; }
+.carousel-inner .next        { left:  33%; display: none;}
 .carousel-inner .prev        { left: -33%; }
 .carousel-control.left,.carousel-control.right {background-image:none;}
 .item:not(.prev) {visibility: visible;}
 .item.right:not(.prev) {visibility: hidden;}
 .rightest{ visibility: visible;}
+.carousel-control{
+    width:10%;
+}
 
 .carousel-inner {
 	a {
 		// background-color: $white;
 		display: block;
 		float: left;
-		width: 269px;
+		max-width: 269px;
 		height: 100px;
 		border: 1px solid red;
 	}
@@ -63,11 +68,15 @@
 	}
 }
 
-.carousel .h3-more {
+.carousel-cont {
+
+.h3-more {
 	background: url('../images/icon_green-block.png');
 	display: block;
 	height: 127px;
 	margin: 0;
-	position: absolute;
+	position: relative;
+        float:left;
 	width: 114px;
+}
 }
