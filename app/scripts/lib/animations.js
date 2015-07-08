@@ -1,5 +1,7 @@
-$(function () {
+
     var scrollMagicController = new ScrollMagic.Controller();
+
+var desktop_animations = function (){
 
     for (var i = 1; i <= 15; i++) {
         new ScrollMagic.Scene({
@@ -210,6 +212,7 @@ $(function () {
     }).setTween(p112)
             .addTo(scrollMagicController);
 
+
     new ScrollMagic.Scene({
         triggerElement: '#section11',
         offset: 10
@@ -270,5 +273,19 @@ $(function () {
     }).setTween(p13)
             .addTo(scrollMagicController);
 
+}
 
-});
+
+$(function(){
+    scrollMagicController = new ScrollMagic.Controller();
+
+desktop_animations()
+//    $(window).resize(function(){
+//        if( $(this).width <= 640 ){
+//            scrollMagicController.destroy();
+//        } else {
+//            desktop_animations()
+//        }
+//    })
+
+})
