@@ -139,14 +139,6 @@
     }
 }
 
-#compliance {
-    // background: url('../images/bg_buildings_compliance.png') no-repeat 0 0;
-}
-
-#compliance2 {
-    // background: url('../images/bg_buildings_compliance.png') no-repeat 0 0;
-}
-
 #it-security {
     // background: url('../images/bg_buildings_it-security-1.svg') no-repeat 0 0;
     // left: 44%;
@@ -157,10 +149,32 @@
 
 #operations {
     // background: url('../images/bg_buildings_operations.png') no-repeat 0 0;
+    left: 26px;
+    height: 180px;
+    width: 50px;
+    
+    img {
+        bottom: -10px;
+    }
 }
 
-#operations2 {
+#operations3 {
     // background: url('../images/bg_buildings_operations.png') no-repeat 0 0;
+    left: 26px;
+    height: 180px;
+    width: 50px;
+    
+    img {
+        bottom: -10px;
+    }
+}
+
+#compliance {
+    // background: url('../images/bg_buildings_compliance.png') no-repeat 0 0;
+}
+
+#compliance2 {
+    // background: url('../images/bg_buildings_compliance.png') no-repeat 0 0;
 }
 
 

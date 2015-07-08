@@ -9,11 +9,11 @@ $(function () {
                 .addTo(scrollMagicController);
     }
 
-    new ScrollMagic.Scene({
-        triggerElement: '#leadInfoBanner',
-        offset: 50
-    }).setTween("#leadInfoBanner", 0.6, {rotateY: 360})
-            .addTo(scrollMagicController);
+    // new ScrollMagic.Scene({
+    //     triggerElement: '#leadInfoBanner',
+    //     offset: 50
+    // }).setTween("#leadInfoBanner", 0.6, {rotateY: 360})
+    //         .addTo(scrollMagicController);
 
     var p1 = TweenMax.to('.xsbottom-bg', 1, {
         height: 186
@@ -77,10 +77,10 @@ $(function () {
 
 // trigger on section 5
     var p5 = TweenMax.to('#business_leadership', 1, {
-        height: 0, width: 0
+        height: 180, width: 50, left: 26, opacity: 0.25
     });
     var p51 = TweenMax.to('#business_leadership2', 1, {
-        height: 0, width: 0, opacity: 0.2
+        height: 144, width: 48, left: 80, opacity: 0.25
     });
 
     new ScrollMagic.Scene({
@@ -97,7 +97,7 @@ $(function () {
 
 // trigger on section 6
     var p6 = TweenMax.to('#it-security', 1, {
-        height: 460, width: 338, left: '0'
+        height: 460, width: 338, left: 0
     });
 
     new ScrollMagic.Scene({
@@ -109,7 +109,7 @@ $(function () {
 
 // trigger on section 7
     var p7 = TweenMax.to('#it-security', 1, {
-        height: 560, width: 380, opacity: 0.65
+        height: 560, width: 380, left: 0, opacity: 0.65
     });
 
     new ScrollMagic.Scene({
@@ -121,7 +121,7 @@ $(function () {
 
 // trigger on section 8
     var p8 = TweenMax.to('#it-security', 1, {
-        height: '100%', width: 380, opacity: 0.65
+        height: 1000, width: 600, left: -230, opacity: 0.15
     });
 
     new ScrollMagic.Scene({
@@ -133,7 +133,7 @@ $(function () {
 
 // trigger on section 9
     var p9 = TweenMax.to('#it-security', 1, {
-        height: 560, width: 380, opacity: 0.65
+        height: 560, width: 380, opacity: 0
     });
 
     new ScrollMagic.Scene({
@@ -144,14 +144,34 @@ $(function () {
 
 
 // trigger on section 10
-    var p10 = TweenMax.to('#it-security', 1, {
-        height: 560, width: 380, opacity: 0.65
+    var p10 = TweenMax.to('#it-operations', 1, {
+        height: 356, width: 117, opacity: 0.65
+    });
+
+    var p101 = TweenMax.to('#it-operations2', 1, {
+        height: 356, width: 117, opacity: 0.65
+    });
+
+    var p102 = TweenMax.to('#it-operations3', 1, {
+        height: 356, width: 117, opacity: 0.65
     });
 
     new ScrollMagic.Scene({
         triggerElement: '#section10',
         offset: 10
     }).setTween(p10)
+            .addTo(scrollMagicController);
+
+    new ScrollMagic.Scene({
+        triggerElement: '#section10',
+        offset: 10
+    }).setTween(p101)
+            .addTo(scrollMagicController);
+
+    new ScrollMagic.Scene({
+        triggerElement: '#section10',
+        offset: 10
+    }).setTween(p102)
             .addTo(scrollMagicController);
 
 

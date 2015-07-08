@@ -58,10 +58,11 @@ $(function () {
     $(".top-level").click(function(){
         $(this).siblings().children(".submenu").slideUp();
         $(this).children(".submenu").slideToggle();
+    });
+
+    $(".close-btn").click(function(){
+        $('#slideNavmenu').offcanvas('toggle');
     })
-
-
-
 
 });
 
