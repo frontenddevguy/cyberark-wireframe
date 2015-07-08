@@ -60,9 +60,9 @@ nav.top-menu {
     }
 
     ul {
-    	float: left; 
-    	width: 100%; 
-    	list-style: none; 
+    	float: left;
+    	width: 100%;
+    	list-style: none;
     	padding: 0px;
     }
 
@@ -70,18 +70,18 @@ nav.top-menu {
     li.title {
 		clear: left;
     	cursor: pointer;
-    	display: block;
-    	line-height: 30px; 
-    	padding: 5px; 
-    	margin-bottom: 5px; 
+    	line-height: 30px;
+    	padding: 5px;
+    	margin-bottom: 5px;
+        display: block;
     	background: $blue-opaque;
 	}
 
 	li.title {
     	background-color: $blue;
 	}
-    
-    .submenu { 
+
+    .submenu {
     	display: none;
     	margin-bottom: 10px;
 
@@ -107,11 +107,11 @@ nav.top-menu {
     li { border-right: 1px solid; color: #000; float: left; padding: 0px 5px;}
 }
 
-// .social-icons{ul{opacity:0;right:0%;}}
+.social-icons{ul{display :none;right:8%;}}
 
 
-.social-icon-trigger { 
-	float: left;
+.social-icon-trigger {
+	float: left; width: 20px;
 }
 
 

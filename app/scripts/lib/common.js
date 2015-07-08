@@ -40,24 +40,23 @@ $(function () {
     });
     $('#myCarouselSec4').addClass("slide");
 
-    
-    // Social Menu    
 
-//     $(".social-icon-trigger").mouseover(function(){
-//         $(".social-icons ul").stop().animate({'right': '0%','opacity': '1'}, 500);
-// //            $(".social-icons ul").show();
-//     });
+    // Social Menu
 
-//     $(".social-icon-trigger").mouseout(function(){
-//         $(".social-icons ul").stop().animate({'right': '-10%', 'opacity': '0'}, 500, function() {
-// //                $(".social-icons ul").hide();
-//         });
+    $(".social-icon-trigger").mouseover(function(){
+        $(".social-icons ul").show();
+        $(".social-icons ul").stop().animate({'right': '10%'}, 300);
+//            $(".social-icons ul").show();
+    });
 
-//     });
-
-    // Quick Links
+    $(".social-icon-trigger").mouseout(function(){
+        $(".social-icons ul").stop().animate({'right': '8%'}, 300, function(){
+            $(".social-icons ul").hide();
+        });
+    });
 
     $(".top-level").click(function(){
+        $(this).siblings().children(".submenu").slideUp();
         $(this).children(".submenu").slideToggle();
     });
 
