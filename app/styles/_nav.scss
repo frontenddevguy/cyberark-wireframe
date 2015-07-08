@@ -33,14 +33,30 @@ nav.top-menu {
 // Quick Links
 
 #slideNavmenu{
+	width: 200px;
+
 	h3 {
-		background-color: $blue;
-		color: $white
+		// background-color: $blue;
+		color: $white;
+		font-size: 15px;
+		line-height: 35px;
+		margin: 0;
+		text-transform: uppercase;
 	}
 
     a {
     	color: $white;
     	text-transform: uppercase;
+    }
+
+    .close-btn {
+    	background: url('../images/close-btn.png') no-repeat 0 0;
+    	display: block;
+    	position: absolute;
+    	height: 14px;
+    	right: 14px;
+    	top: 14px;
+    	width: 14px;
     }
 
     ul {
@@ -50,15 +66,40 @@ nav.top-menu {
     	padding: 0px;
     }
 
-    li {
+    li a,
+    li.title {
+		clear: left;
     	cursor: pointer;
+    	display: block;
     	line-height: 30px; 
     	padding: 5px; 
-    	margin-bottom: 2px; 
+    	margin-bottom: 5px; 
     	background: $blue-opaque;
-    }
+	}
 
-    .submenu { display: none;}
+	li.title {
+    	background-color: $blue;
+	}
+    
+    .submenu { 
+    	display: none;
+    	margin-bottom: 10px;
+
+    	li a {
+    		background: transparent;
+    		border-bottom: 1px solid #3c3c3b;
+    		color: #3c3c3b;
+    		font-size: 13px;
+    		line-height: 16px;
+    		margin: 0 14px;
+    		min-height: 40px;
+    		text-transform: none;
+
+    	// 	position: relative;
+  			// top: 50%;
+  			// transform: translateY(-50%);
+    	}
+    }
 }
 
 .social-icons{

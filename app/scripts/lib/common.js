@@ -43,24 +43,27 @@ $(function () {
     
     // Social Menu    
 
-    $(".social-icon-trigger").mouseover(function(){
-        $(".social-icons ul").stop().animate({'right': '0%','opacity': '1'}, 500);
-//            $(".social-icons ul").show();
-    });
+//     $(".social-icon-trigger").mouseover(function(){
+//         $(".social-icons ul").stop().animate({'right': '0%','opacity': '1'}, 500);
+// //            $(".social-icons ul").show();
+//     });
 
-    $(".social-icon-trigger").mouseout(function(){
-        $(".social-icons ul").stop().animate({'right': '-10%', 'opacity': '0'}, 500, function() {
-//                $(".social-icons ul").hide();
-        });
+//     $(".social-icon-trigger").mouseout(function(){
+//         $(".social-icons ul").stop().animate({'right': '-10%', 'opacity': '0'}, 500, function() {
+// //                $(".social-icons ul").hide();
+//         });
 
-    });
+//     });
+
+    // Quick Links
 
     $(".top-level").click(function(){
         $(this).children(".submenu").slideToggle();
+    });
+
+    $(".close-btn").click(function(){
+        $('#slideNavmenu').offcanvas('toggle');
     })
-
-
-
 
 });
 
