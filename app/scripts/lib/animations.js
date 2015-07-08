@@ -145,15 +145,15 @@ $(function () {
 
 // trigger on section 10
     var p10 = TweenMax.to('#it-operations', 1, {
-        height: 356, width: 117, opacity: 0.65
+        height: 360, width: 117, left: 568, opacity: 0.65
     });
 
     var p101 = TweenMax.to('#it-operations2', 1, {
-        height: 356, width: 117, opacity: 0.65
+        height: 509, width: 140, left: 690, opacity: 1
     });
 
     var p102 = TweenMax.to('#it-operations3', 1, {
-        height: 356, width: 117, opacity: 0.65
+        height: 255, width: 100, right: 36, opacity: 0.65
     });
 
     new ScrollMagic.Scene({
