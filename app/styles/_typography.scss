@@ -40,5 +40,12 @@ p {
 		color: $white;
 		font-size: $font-size;
 		text-transform: uppercase;
+		text-decoration: none;
+	}
+
+	.carousel a {
+		font-size: 13px;
+		text-transform: none;
 	}
 }
+

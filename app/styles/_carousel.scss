@@ -20,11 +20,11 @@
 
 
 #myCarouselSec4.carousel {
-border: 1px solid red;
+	// border: 1px solid red;
     float: left;
     height: 117px;
-    margin-left: -12px;
-    max-width: 980px;
+    // margin-left: -12px;
+    max-width: 860px;
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -36,8 +36,9 @@ border: 1px solid red;
 .carousel-inner {
 	background-color: #5d5d60;
 	/*margin-left: 126px;*/
+	padding-left: 40px;
 	opacity: 0.8;
-        width:90%;
+    // width:90%;
 }
 
 .carousel-inner .active.left { left: -33%; }
@@ -48,7 +49,7 @@ border: 1px solid red;
 .item.right:not(.prev) {visibility: hidden;}
 .rightest{ visibility: visible;}
 .carousel-control{
-    width:10%;
+    width: 5%;
 }
 
 .carousel-inner {
@@ -57,26 +58,41 @@ border: 1px solid red;
 		display: block;
 		float: left;
 		max-width: 269px;
-		height: 100px;
-		border: 1px solid red;
+		height: 80px;
+		padding: 0 0 0 60px;
+		// border: 1px solid red;
 	}
 
-	.item {
+	.read {
+		background:url('../images/icon_pdf.png') no-repeat left 5px;
+	}
+
+	.watch {
+		background:url('../images/icon_video.png') no-repeat left 5px;
+	}
+
+	.download {
+		background:url('../images/icon_pdf.png') no-repeat left 5px;
+	}
+
+	.item > div {
 		border-left: 1px solid $white;
-		padding: 15px;
+		margin: 15px 0 15px 10px;
+		padding: 12px 0 0 12px!important;
 		height: 80px;
 	}
 }
 
 .carousel-cont {
 
-.h3-more {
-	background: url('../images/icon_green-block.png');
-	display: block;
-	height: 127px;
-	margin: 0;
-	position: relative;
-        float:left;
-	width: 114px;
-}
+	.h3-more {
+		background: url('../images/icon_green-block.png');
+		color: $white;
+		display: block;
+		height: 127px;
+		margin: -3px 0 0 0;
+		position: relative;
+	    float:left;
+		width: 114px;
+	}
 }
