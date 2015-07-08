@@ -95,9 +95,7 @@
 
 #xsbottom-bg {
     background: url('../images/bg_buildings.png') no-repeat bottom center;
-    // background-size: cover;
-    // border: 1px solid green;
-    // display: inline-block;
+    // background: url('../images/bg_buildings-all.png') no-repeat bottom center;
     height: 186px;
     left: 0;
     margin: 0 auto;
@@ -110,16 +108,12 @@
 
 .xsbottom {
     position: absolute;
-    // background-size: 100% auto!important;
-    // height: 100px!important;
-    // border: 1px solid orange;
     bottom: 0;
     width: auto;
 
     img {
         bottom: 0;
-        // height: 100%;
-        // left: 0;
+        // opacity: 0;
         position: absolute;
         vertical-align: bottom;
         width: 100%;
@@ -184,12 +178,18 @@
 }
 
 #compliance {
-    // background: url('../images/bg_buildings_compliance.png') no-repeat 0 0;
+    right: 26px;
+    height: 180px;
+    width: 50px;
+    
+    img {
+        bottom: -10px;
+    }
 }
 
-#compliance2 {
-    // background: url('../images/bg_buildings_compliance.png') no-repeat 0 0;
-}
+// #compliance2 {
+//     // background: url('../images/bg_buildings_compliance.png') no-repeat 0 0;
+// }
 
 
 

@@ -44,11 +44,21 @@
 }
 
 .rain-left {
-
+	background: url('../images/bg_digital-rain.png') no-repeat 0 0;
+	height: 289px;
+	left: 74px;
+	position: fixed;
+	width: 79px;
+	top: -180px;
 }
 
 .rain-right {
-	
+	background: url('../images/bg_digital-rain.png') no-repeat 0 0;
+	bottom: 0;
+	height: 289px;
+	position: fixed;
+	right: 24px;
+	width: 79px;
 }
 
 
