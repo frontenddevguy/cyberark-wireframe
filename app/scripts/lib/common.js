@@ -21,7 +21,11 @@ $(function () {
     $('.carousel-control.right').click(function () {
         $('#myCarouselSec4').carousel('next');
     });
-    $('.carousel .item').each(function () {
+    if($(window).width()<500){
+        $('.carousel-inner').addClass('vertical');
+    }
+    else{
+         $('.carousel .item').each(function () {
         var next = $(this).next();
         if (!next.length) {
             next = $(this).siblings(':first');
@@ -38,6 +42,8 @@ $(function () {
 
         }
     });
+    }
+
     $('#myCarouselSec4').addClass("slide");
 
 
