@@ -6,8 +6,8 @@
 	// border: 1px solid red;
     float: left;
     height: 117px;
-    // margin-left: -12px;
-    max-width: 860px;
+    margin-left: -11px;
+    // max-width: 860px;
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -40,14 +40,14 @@
 		// background-color: $white;
 		display: block;
 		float: left;
-		max-width: 269px;
+		// max-width: 269px;
 		height: 80px;
 		padding: 0 0 0 60px;
 		// border: 1px solid red;
 	}
 
 	.read {
-		background:url('../images/icon_pdf.png') no-repeat left 5px;
+		background:url('../images/icon_analyst.png') no-repeat left 5px;
 	}
 
 	.watch {
@@ -61,25 +61,57 @@
 	.item > div {
 		border-left: 1px solid $white;
 		margin: 15px 0 15px 10px;
-		padding: 12px 0 0 12px!important;
+		padding: 5px 0 0 12px!important;
 		height: 80px;
 	}
 }
 
-.carousel-cont {
-
+// .carousel-cont {
+// 	position: absolute;
+// 	bottom: 70px;
 
 	.h3-more {
 		background: url('../images/icon_green-block.png');
 		color: $white;
 		display: block;
-		height: 127px;
+		height: 126px;
 		margin: -3px 0 0 0;
 		position: relative;
 	    float:left;
-		width: 114px;
+		width: 126px;
+
+		h3 {
+			// position: absolute;
+			// left: 26px;
+			// top: 40px;
+			font-size: 17px;
+			line-height: 24px;
+			margin: 30px 0 0 25px;
+			text-transform: uppercase;
+		}
+	}
+// }
+
+// Mixed fixed and fluid columns
+
+.container {
+	.row {
+		.col-fixed-126{
+		    // margin-left:126px;
+		    width:138px;
+		    // background:blue;
+		    position:absolute;
+		    // height:100%;
+		}
+
+		.col-offset-126{
+		    padding-left:138px;
+		}
 	}
 }
+
+// Mobile 
+
 .carousel-inner.vertical {
   height: 100%;
 }
