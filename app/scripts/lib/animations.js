@@ -1,8 +1,9 @@
 
-    var scrollMagicController = new ScrollMagic.Controller();
+var scrollMagicController = new ScrollMagic.Controller();
 
 var desktop_animations = function (){
-
+    if(!scrollMagicController)
+        scrollMagicController = new ScrollMagic.Controller();
     for (var i = 1; i <= 15; i++) {
         new ScrollMagic.Scene({
             triggerElement: '#section' + i,
@@ -275,17 +276,23 @@ var desktop_animations = function (){
 
 }
 
+var mobile_animations = function(){
+ //set mobile animations
+}
+
+var checkWindowWidth = function() {
+    if( $(window).width() <= 640 ){
+        mobile_animations();
+    } else {
+        desktop_animations()
+    }
+}
 
 $(function(){
-    scrollMagicController = new ScrollMagic.Controller();
-
-desktop_animations()
-//    $(window).resize(function(){
-//        if( $(this).width <= 640 ){
-//            scrollMagicController.destroy();
-//        } else {
-//            desktop_animations()
-//        }
-//    })
-
+    checkWindowWidth();
 })
+
+$(window).resize(function(){
+    checkWindowWidth();
+})
+
