@@ -20,6 +20,9 @@
 	width: 42px;
 }
 
+.nav-tabs {
+	border: none;
+}
 
 .hotpoint-links {
 	position: absolute;
@@ -34,18 +37,14 @@
 			display: inline-block;
 			font-size: 13px;
 			line-height: 15px;
+			padding: 0;
 			height: 44px;
-
-			
-			
 
 			// background-image:
 			// radial-gradient(circle at 0 0, rgba(204,0,0,0) 14px, #c00 15px),
 			// radial-gradient(circle at 100% 0, rgba(204,0,0,0) 14px, #c00 15px),
 			// radial-gradient(circle at 100% 100%, rgba(204,0,0,0) 14px, #c00 15px),
-			// radial-gradient(circle at 0 100%, rgba(204,0,0,0) 14px, #c00 15px);
-
-			
+			// radial-gradient(circle at 0 100%, rgba(204,0,0,0) 14px, #c00 15px);			
 
 			&:hover {
 				// border: 10px solid green;
@@ -79,23 +78,27 @@
 		// }
 	}
 
-	.hotpoint-1 a {
-		background: url('../images/hotpoint-1.png') no-repeat 0 0;
-		width: 193px;
+	.hotpoint-1 {
+		a {
+			background: url('../images/hotpoint-1.png') no-repeat 0 0;
+			width: 193px;
+		}
 
-		&:hover,
-		&.active {
+		&.active a,
+		a:hover {
 			background: url('../images/hotpoint-sel-1.png') no-repeat 0 0;
 		}
 	}
 
-	.hotpoint-2 a {
-		background: url('../images/hotpoint-2.png') no-repeat 0 0;
-		width: 183px;
-		// transform: rotate(180deg);
+	.hotpoint-2 {
+		a {
+			background: url('../images/hotpoint-2.png') no-repeat 0 0;
+			width: 183px;
+			// transform: rotate(180deg);
+		}
 
-		&:hover,
-		&.active {
+		&.active a,
+		a:hover {
 			background: url('../images/hotpoint-sel-2.png') no-repeat 0 0;
 		}
 
@@ -104,31 +107,39 @@
 		}
 	}
 
-	.hotpoint-3 a {
-		background: url('../images/hotpoint-3.png') no-repeat 0 0;
-		width: 143px;
-
-		&:hover,
-		&.active {
+	.hotpoint-3 {
+		a {
+			background: url('../images/hotpoint-3.png') no-repeat 0 0;
+			width: 143px;
+		}
+		
+		&.active a,
+		a:hover {
 			background: url('../images/hotpoint-sel-3.png') no-repeat 0 0;
 		}
 	}
 
-	.hotpoint-4 a {
-		background: url('../images/hotpoint-4.png') no-repeat 0 0;
-		width: 233px;
-		// transform: rotate(180deg);
+	.hotpoint-4 {
+		a {
+			background: url('../images/hotpoint-4.png') no-repeat 0 0;
+			width: 233px;
+			// transform: rotate(180deg);
+		}
 
-		&:hover {
+		&.active a,
+		a:hover {
 			background: url('../images/hotpoint-sel-4.png') no-repeat 0 0;
 		}
 	}
 
-	.hotpoint-5 a {
-		background: url('../images/hotpoint-5.png') no-repeat 0 0;
-		width: 183px;
-
-		&:hover {
+	.hotpoint-5 {
+		a {
+			background: url('../images/hotpoint-5.png') no-repeat 0 0;
+			width: 183px;
+		}
+		
+		&.active a,
+		a:hover {
 			background: url('../images/hotpoint-sel-5.png') no-repeat 0 0;
 		}
 
@@ -137,21 +148,27 @@
 		}
 	}
 
-	.hotpoint-6 a {
-		background: url('../images/hotpoint-6.png') no-repeat 0 0;
-		width: 143px;
-		// transform: rotate(180deg);
+	.hotpoint-6 {
+		a {
+			background: url('../images/hotpoint-6.png') no-repeat 0 0;
+			width: 143px;
+			// transform: rotate(180deg);
+		}
 
-		&:hover {
+		&.active a,
+		a:hover {
 			background: url('../images/hotpoint-sel-6.png') no-repeat 0 0;
 		}
 	}
 
-	.hotpoint-7 a {
-		background: url('../images/hotpoint-7.png') no-repeat 0 0;
-		width: 143px;
-
-		&:hover {
+	.hotpoint-7 {
+		a {
+			background: url('../images/hotpoint-7.png') no-repeat 0 0;
+			width: 143px;
+		}
+		
+		&.active a,
+		a:hover {
 			background: url('../images/hotpoint-sel-7.png') no-repeat 0 0;
 		}
 	}

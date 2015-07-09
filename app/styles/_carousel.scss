@@ -109,6 +109,14 @@
 	}
 }
 
+.tab-pane {
+	.carousel-container {
+		position: fixed;
+		bottom: 70px;
+		left: 0;
+	}
+}
+
 // Mixed fixed and fluid columns
 
 .container {

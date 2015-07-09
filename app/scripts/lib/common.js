@@ -82,22 +82,21 @@ $(function () {
     });
 
 });
+
+
+
 // Hot Links / Tabs
 
 
-// $(document).ready(function(){
+$(document).ready(function(){
 
-//     console.log("hey tabs in common js");
+    // console.log("hey tabs in common js");
 
-//     $("#myTab a").click(function(e){
-
-//         e.preventDefault();
-
-//         $(this).tab('show');
-
-//     });
-
-// });
+    $("#section8 .carousel-container").hide();
+    $(".hotpoint-1 a").click(function(){
+        $(".tab-carousel-1").show();
+    });
+});
 
 
 
