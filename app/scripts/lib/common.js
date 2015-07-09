@@ -93,8 +93,10 @@ $(document).ready(function(){
     // console.log("hey tabs in common js");
 
     $("#section8 .carousel-container").hide();
-    $(".hotpoint-1 a").click(function(){
-        $(".tab-carousel-1").show();
+    $(".hotpoint-trigger-8 a").click(function(){
+        var hp = $(this).data('hpoint');
+        $("#section8 .carousel-container").hide();
+        $("."+hp).fadeIn();
     });
 });
 
