@@ -11,15 +11,15 @@ $(function () {
 
     // Carousel
 
-    $('#myCarouselSec4').carousel({
+    $('.carousel').carousel({
         interval: 40000
     });
     $('.carousel-control.left').click(function () {
-        $('#myCarouselSec4').carousel('prev');
+        $('.carousel').carousel('prev');
     });
 
     $('.carousel-control.right').click(function () {
-        $('#myCarouselSec4').carousel('next');
+        $('.carousel').carousel('next');
     });
     if($(window).width()<500){
         $('.carousel-inner').addClass('vertical');
@@ -44,7 +44,7 @@ $(function () {
     });
     }
 
-    $('#myCarouselSec4').addClass("slide");
+    $('.carousel').addClass("slide");
 
 
     // Social Menu
@@ -85,16 +85,26 @@ $(function () {
 // Hot Links / Tabs
 
 
-$(document).ready(function(){
+// $(document).ready(function(){
 
-    $("#myTab a").click(function(e){
+//     console.log("hey tabs in common js");
 
-        e.preventDefault();
+//     $("#myTab a").click(function(e){
 
-        $(this).tab('show');
+//         e.preventDefault();
 
-    });
+//         $(this).tab('show');
 
-});
+//     });
+
+// });
+
+
+
+
+
+
+
+
 
 
