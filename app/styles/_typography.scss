@@ -26,6 +26,14 @@ h2 {
 	margin-bottom: 30px;
 }
 
+.tab-pane {
+	h2 {
+		color: $blue;
+		font-size: 20px;
+		text-transform: uppercase;
+	}
+}
+
 b {
 	color: $blue;
 	// display: block;
