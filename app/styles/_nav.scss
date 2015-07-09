@@ -173,5 +173,14 @@ nav.top-menu {
 }
 
 
+.content-links {
+    a {
+        color: $grey-text;
+        text-transform: none;
 
+        &:hover {
+            color: $blue;
+        }
+    } 
+}
 

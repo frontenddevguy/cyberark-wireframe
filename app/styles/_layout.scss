@@ -95,9 +95,31 @@ section,
 	}
 }
 
+#section5,
+#section9 {
+	.col-lg-20 {
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+}
+
+#section12 {
+	.col-lg-16 {
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+}
+
+#section10,
 #section11 {
-	p {
-		padding-right: 110px;
+	.col-lg-20 {
+		p {
+			padding-right: 110px;
+		}
 	}
 }
 
