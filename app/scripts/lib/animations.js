@@ -268,10 +268,54 @@ var desktop_animations = function (){
         height: 579, width: 118, right: '17%', opacity: 1
     });
 
+    var p131 = TweenMax.to('#it-operations2', 1, {
+        height: 900, width: 217, right: '18%', opacity: 0
+    });
+
+    var p132 = TweenMax.to('#it-operations3', 1, {
+        height: 415, width: 156, right: '2%', opacity: 0
+    });
+
     new ScrollMagic.Scene({
         triggerElement: '#section13',
         offset: 10
     }).setTween(p13)
+            .addTo(scrollMagicController);
+
+    new ScrollMagic.Scene({
+        triggerElement: '#section13',
+        offset: 10
+    }).setTween(p131)
+            .addTo(scrollMagicController);
+
+    new ScrollMagic.Scene({
+        triggerElement: '#section13',
+        offset: 10
+    }).setTween(p132)
+            .addTo(scrollMagicController);
+
+
+// trigger on section 14
+    var p14 = TweenMax.to('#compliance', 1, {
+        height: 700, width: 190, right: '17%', bottom: -250, opacity: 0.5
+    });
+
+    new ScrollMagic.Scene({
+        triggerElement: '#section14',
+        offset: 10
+    }).setTween(p14)
+            .addTo(scrollMagicController);
+
+
+// trigger on section 15
+    var p15 = TweenMax.to('#compliance', 1, {
+        height: 700, width: 400, right: '6%', bottom: -250, opacity: 0.1
+    });
+
+    new ScrollMagic.Scene({
+        triggerElement: '#section15',
+        offset: 10
+    }).setTween(p15)
             .addTo(scrollMagicController);
 
 }

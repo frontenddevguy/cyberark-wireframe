@@ -74,15 +74,6 @@
 		
 		margin-bottom: 6px;
 
-		// span {
-		// 	background : $blue;
-		// 	border: 1px solid $blue;
-		// 	border-radius: 11px;
-		// 	display: inline-block;
-		// 	height: 11px;
-  //   		margin: -6px 0 0 -6px;
-  //   		width: 11px;
-		// }
 	}
 
 	.hotpoint-1 {
@@ -181,4 +172,87 @@
 	}
 	
 }
+
+
+#section15 {
+	.nav-tabs {
+		margin-top: -100px;
+	}
+
+	.tab-content {
+		h2 {
+			background-color: #7bc56a;
+			color: $white;
+			font-size: 17px;
+			padding-right: 20px;
+			text-align: right;
+		}
+
+		p {
+			color: #3c7db7;
+		}
+	}
+
+	.hotpoint-links {
+		li {
+			clear: left;
+
+			a {
+				background: url('../images/compliance_hotpoint-bg.png') no-repeat right bottom;
+				// color: #7bc56a;
+				color: #3c7db7;
+				text-transform: none;
+			}
+
+			&.active a,
+			a:hover {
+				background: url('../images/compliance_hotpoint-bg-sel.png') no-repeat right bottom;
+				color: #7bc56a;
+			}
+
+			span {
+				padding: 0;
+			}
+		}
+
+		.hotpoint-1 a {
+			margin-left: 60px;
+			width: 284px;
+		}
+
+		.hotpoint-2 a {
+			margin-left: 123px;
+			width: 180px;
+		}
+
+		.hotpoint-3 a {
+			margin-left: 85px;
+			width: 256px;
+		}
+
+		.hotpoint-4 a {
+			margin-left: 14px;
+			width: 254px;
+		}
+
+		.hotpoint-5 a {
+			margin-left: 64px;
+			width: 255px;
+		}
+
+		.hotpoint-6 a {
+			margin-left: 16px;
+			width: 212px;
+		}
+
+		.hotpoint-7 a {
+			margin-left: 0px;
+			width: 346px;
+		}
+	}
+}
+
+
+
+
 

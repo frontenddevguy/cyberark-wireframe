@@ -98,6 +98,14 @@ $(document).ready(function(){
         $("#section8 .carousel-container").hide();
         $("."+hp).fadeIn();
     });
+
+    $("#section15 .carousel-container").hide();
+    // $("#section15 .tab-carousel-1").show();
+    $(".hotpoint-trigger-8 a").click(function(){
+        var hp = $(this).data('hpoint');
+        $("#section15 .carousel-container").hide();
+        $("."+hp).fadeIn();
+    });
 });
 
 
